@@ -1,0 +1,22 @@
+.navbar{
+    margin: 20px 170px;
+}
+
+.navMenu{
+    gap: 60px;
+    font-size: 1.25rem;
+}
+
+.navConnect{
+padding:20px 40px ;
+border-radius: 50px;
+background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.6%);
+font-size: 22px;
+cursor: pointer;
+transition: 0.5s;
+}
+
+.navConnect:hover{
+transform: scale(1.05);
+
+}

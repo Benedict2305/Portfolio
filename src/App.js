@@ -1,9 +1,11 @@
 import React from 'react'
-import NavBar from './components/NavBar'
+import Navbar from './navbar/Navbar'
+import Hero from './hero/Hero'
 const App = () => {
   return (
     <div>
-    <NavBar />
+    <Navbar />
+    <Hero />
     </div>
   )
 }
