@@ -1,0 +1,82 @@
+.GetInTouch-title{
+
+}
+
+.GetInTouch-title{
+   position: relative;
+    width: 320px;
+    height: 50px;
+    overflow: hidden;
+    z-index: 1; 
+}
+
+.GetInTouch-title::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    padding: 6px;
+    border-radius: 12px;
+    z-index: -1;
+    background-size: 30px 30px;
+    animation: movingZigzag 3s linear infinite;
+    background: repeating-linear-gradient(45deg, #da7c25 0 6px, transparent 6px 12px),repeating-linear-gradient(-45deg, #b923e1 0 6px, transparent 6px 12px);
+    mask: linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
+    mask-composite: exclude;
+}
+
+@keyframes movingZigzag{
+    0%{background-position: 0 0, 0 0;}
+    100%{
+        background-position: 60px 60px, -60px -60px;
+    }
+}
+
+.GetInTouch-title p{
+    font-size: 36px;
+}
+
+.contact-briefing h1{
+    background:linear-gradient(270deg, #df8908 70%, #b415ff 100% ) ;
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.contact-briefing p, .getInTouchIcon, .contact-details p{
+font-size: 20px;
+line-height: 35px;
+color: #d8d8d8;
+}
+
+.formContent label{
+color: #d8d8d8;
+font-size: 20px;
+}
+
+.formContent input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    padding-left: 20px;
+    background: #32323c;
+    color: #a0a0a0;
+    font-size: 20px;
+}
+
+.formContent textarea{
+background: #32323c;
+    color: #a0a0a0;
+    font-size: 20px;
+    resize: none;
+}
+
+.submitBtn{
+    background:linear-gradient(270deg, #df8908 10%, #b415ff 100% ) ;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submitBtn:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}

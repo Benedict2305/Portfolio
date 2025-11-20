@@ -8,7 +8,7 @@
 }
 
 .navConnect{
-padding:20px 40px ;
+padding:7px 30px ;
 border-radius: 50px;
 background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.6%);
 font-size: 22px;
@@ -20,3 +20,4 @@ transition: 0.5s;
 transform: scale(1.05);
 
 }
+

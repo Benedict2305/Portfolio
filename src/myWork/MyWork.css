@@ -1,0 +1,56 @@
+.myworkImageDiv{
+    width: 12rem;
+    height: 12rem;
+}
+
+.myworkImageDiv img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+}
+
+.myworkImageDiv img:hover{
+    transition: 0.3s;
+    transform: scale(1.10);
+    border: 2px solid #b923e1;
+}
+
+.myWork-title{
+   position: relative;
+    width: 320px;
+    height: 50px;
+    overflow: hidden;
+    z-index: 1; 
+}
+
+.myWork-title::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    padding: 6px;
+    border-radius: 12px;
+    z-index: -1;
+    background-size: 30px 30px;
+    animation: movingZigzag 3s linear infinite;
+    background: repeating-linear-gradient(45deg, #da7c25 0 6px, transparent 6px 12px),repeating-linear-gradient(-45deg, #b923e1 0 6px, transparent 6px 12px);
+    mask: linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
+    mask-composite: exclude;
+}
+
+@keyframes movingZigzag{
+    0%{background-position: 0 0, 0 0;}
+    100%{
+        background-position: 60px 60px, -60px -60px;
+    }
+}
+
+.myWork-title p{
+    font-size: 36px;
+}
+
+.myworkShowMore{
+    width: 10rem;
+    height: auto;
+}
