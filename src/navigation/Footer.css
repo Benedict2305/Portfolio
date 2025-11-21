@@ -1,11 +1,11 @@
-form input:nth-child(1){
+.subscribeForm input:nth-child(1){
     border: none;
     outline: none;
     background: #32323c;
     color: #a0a0a0;
     font-size: 20px;
 }
-form input:nth-child(2){
+.subscribeForm input:nth-child(2){
 background:linear-gradient(270deg, #df8908 10%, #b415ff 100% ) ;
     cursor: pointer;
     transition: 0.3s;
@@ -13,11 +13,28 @@ background:linear-gradient(270deg, #df8908 10%, #b415ff 100% ) ;
     outline: none;
     font-size: 20px;
 }
-form input:nth-child(2):hover{
+.subscribeForm input:nth-child(2):hover{
 transform: scale(1.08);
 transition: 0.3s;
 }
 
 .footerBrand h1{
     font-family:cursive;
+     color: #a0a0a0;
+    font-size: 36px;
 }
+
+.footerBrand p, .copyRight p, .footer .footerTerms{
+color: #a0a0a0;
+    font-size: 20px;
+}
+
+.footer .footerTerms:hover{
+    background:linear-gradient(270deg, #df8908 70%, #b415ff 100% ) ;
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+transform: scale(1.1);
+transition: 0.5s;
+}
+

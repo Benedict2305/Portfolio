@@ -52,10 +52,18 @@
     width: 50%;
     height: 0.5rem;
     border-radius: 3.125rem;
-    background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.6%);
+    background: linear-gradient(267deg, #da7c25 15%, #b923e1 102.6%);
 }
 
 .about-skill:hover{
     transform: scale(1.05);
     transition: 0.3s;
+}
+
+@media (max-width:767.9px) {
+   .About-title{
+    width: 50%;
+    height: 4rem;
+    
+} 
 }

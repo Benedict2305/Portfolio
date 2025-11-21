@@ -18,9 +18,9 @@ background-clip: text;
 }
 
 .heroContent p{
-    width: 80%;
+    /* width: 80%; */
     text-align: center;
-    font-size: 1.5rem;
+    font-size: clamp(1.02rem, 5vw, 1.5rem);
     line-height: 2.5rem;
 }
 
@@ -30,7 +30,8 @@ background-clip: text;
 }
 
 .hero-action .hero-connect{
-    padding: .3rem 1rem;
+    /* padding: .3rem 1rem; */
+    font-size: clamp(1.02rem, 5vw, 1.5rem);
     border-radius: 3.13rem;
     background: linear-gradient(264deg, #df8908 -5.09%, #b415ff 106.2%);
     cursor: pointer;
@@ -38,7 +39,8 @@ background-clip: text;
 }
 
 .hero-action .hero-resume{
-    padding: .3rem 2.3rem;
+    /* padding: .3rem 2.3rem; */
+    font-size: clamp(1.02rem, 5vw, 1.5rem);
     border-radius: 3.13rem;
     border: 2px solid white;
     cursor: pointer;
@@ -51,4 +53,13 @@ background-clip: text;
 
 .hero-action .hero-resume:hover{
     border-color: #b415ff;
+}
+
+@media (max-width:320px) {
+    .hero-action .hero-resume, .hero-action .hero-connect{
+        text-align: center;
+        font-weight: 600;
+    }
+
+    
 }
