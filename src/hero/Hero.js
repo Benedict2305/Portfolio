@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div className="container-fluid mt-5 pt-4">
       <div className="row ">
-        <div className="col-md-7 d-flex flex-column justify-content-center align-items-center gap-1 mx-auto">
+        <div className="col-md-10 col-xl-7 d-flex flex-column justify-content-center align-items-center gap-1 mx-auto">
           <div className="heroImage">
             <img src={ben1Image} alt="" className="rounded-circle" />
           </div>

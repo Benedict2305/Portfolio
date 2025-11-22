@@ -12,18 +12,18 @@ const Footer = () => {
     // console.log(runningYear)
   }, []);
   return (
-    <div className="container mb-4">
+    <div className="container-xl mb-4">
       <div className="row">
         <div className="col-12">
           <div className="row align-items-center justify-content-center">
-            <div className="col-6 footerBrand">
+            <div className="col-md-6 footerBrand">
               <h1>Benedict</h1>
               <p className="fs-5">
                 I am an experienced Frontend Developer with lots of professional
                 expertise in the field.
               </p>
             </div>
-            <div className="col-6">
+            <div className="col-md-6">
               <form className="d-flex gap-4 justify-content-center subscribeForm">
                 <input
                   type="email"
@@ -41,17 +41,17 @@ const Footer = () => {
           </div>
         </div>
 
-        <hr />
+        <hr className="mt-4 mt-sm-0"/>
         <div className="col-12">
-          <div className="row">
-            <div className="col-6 copyRight">
+          <div className="row changingReverse">
+            <div className="col-md-5 col-lg-6 copyRight">
               {" "}
-              <p>© {copyRightDate} Benedict Idio. All rights reserved.</p>
+              <p>© {copyRightDate}  All rights reserved.</p>
             </div>
-            <div className="col-6 d-flex justify-content-between footer">
-              <NavLink className=" footerTerms">Terms of services</NavLink>
-              <NavLink className="footerTerms">Privacy Policy </NavLink>
-              <NavLink className="footerTerms">Connect with me</NavLink>
+            <div className="col-md-7 col-lg-6 d-flex justify-content-evenl gap-3 footer">
+              <NavLink className=" footerTerms text-nowrap">Terms of services</NavLink>
+              <NavLink className="footerTerms text-nowrap">Privacy Policy </NavLink>
+              <NavLink className="footerTerms text-nowrap">Connect with me</NavLink>
             </div>
           </div>
         </div>

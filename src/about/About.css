@@ -27,29 +27,29 @@
 }
 
 .about-image{
-    width: 45rem;
-    height: 25rem;
+    width: fit-content;
+    /* height: 25rem; */
 }
 
 .about-image img{
     width: 100%;
     height: 100%;
-    object-fit: contain;
-    object-position: -8rem center;
+    object-fit: cover;
+    object-position:center;
 }
 
 .about-skill{
     transition: 0.3s;
 }
 .about-skill p{
-    min-width: 9.4rem;
+    min-width: 7rem;
     font-size: 1.25rem;
 }
 
 .about-skill hr{
     outline: none;
     border: none;
-    width: 50%;
+    /* width: 50%; */
     height: 0.5rem;
     border-radius: 3.125rem;
     background: linear-gradient(267deg, #da7c25 15%, #b923e1 102.6%);
@@ -65,5 +65,12 @@
     width: 50%;
     height: 4rem;
     
+} 
+}
+
+@media (min-width:768px) {
+   .about-skill p{
+    min-width: 9.4rem;
+    font-size: 1.25rem;
 } 
 }

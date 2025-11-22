@@ -9,7 +9,7 @@ const Contact = () => {
         </div>
       </div>
       <div className="row">
-        <div className="col-6">
+        <div className="col-md-6">
           <div className="contact-briefing">
             <h1>Let's Talk</h1>
             <p>
@@ -38,7 +38,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="col-6">
+        <div className="col-md-6">
           <form className="d-flex flex-column align-items-start gap-2 formContent">
             <label htmlFor="yourName">Your Name</label>
             <input
@@ -63,7 +63,7 @@ const Contact = () => {
             ></textarea>
             <button
               type="submit"
-              className="submitBtn border-0 rounded-pill px-4 py-2 fs-5 fw-bolder"
+              className="submitBtn border-0 rounded-pill px-4 py-2 fs-5 fw-bolder mt-3"
             >
               Submit Now
             </button>
