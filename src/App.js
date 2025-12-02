@@ -1,15 +1,16 @@
 import React from 'react'
-import Navbar from './navbar/Navbar'
+// import Navbar from './navbar/Navbar'
 import Hero from './hero/Hero'
 import About from './about/About'
 import MyWork from './myWork/MyWork'
 import Contact from './contact/Contact'
 import Footer from './navbar/Footer'
-
+import Nav from './navbar/Nav'
 const App = () => {
   return (
     <div>
-    <Navbar />
+      <Nav />
+    {/* <Navbar /> */}
     <Hero />
     <About />
     <MyWork />
