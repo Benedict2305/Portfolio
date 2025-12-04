@@ -4,7 +4,7 @@ import "./Hero.css";
 import ben1Image from "../images/ben1.jpg";
 const Hero = () => {
   return (
-    <div className="container-fluid mt-5 pt-4">
+    <div className="container-fluid mt-5 pt-3 pb-4">
       <div className="row ">
         <div className="col-md-10 col-xl-7 d-flex flex-column justify-content-center align-items-center gap-1 mx-auto">
           <div className="heroImage">

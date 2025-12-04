@@ -1,26 +1,24 @@
 import React from "react";
-import { NavLink} from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {  faCartPlus } from "@fortawesome/free-solid-svg-icons";
 import "./Navbar.css";
-// import "../component/GeneralStyles.css";
-// import logoImage from "../images/logo2.png";
+// import logoImage from "../images/benedict-high-resolution-logo.png";
+import benedictLogo from '../images/benedictLogo.png'
 
-const Navbar = () => {
+const NavBar = () => {
   return (
     <nav className="navbar navbar-expand-md bg-dark sticky-top w-100 ">
       <div className="container-fluid d-flex align-item-center justify-content-between px-lg-5">
         <div className="navbar-brandDiv d-flex align-items-center justify-content-center">
           <NavLink className="navbar-brand d-flex align-items-center justify-content-center">
-            {/* <img
-              src={logoImage}
+            <img
+              src={benedictLogo}
               alt=""
-              width={70}
-              height={50}
-              style={
-              { objectFit: "cover" }}
-            /> */}
-            Benedict
+              width={150}
+              height={70}
+              style={{ objectFit: "contain" }}
+            />
           </NavLink>
         </div>
 
@@ -47,23 +45,11 @@ const Navbar = () => {
                 className="text-decoration-none  navStyling"
                 to="/"
                 style={({ isActive }) => ({
-                  color: isActive ? "rgb(231, 154, 57)" : "white",
+                  background: isActive ? "rgb(231, 154, 57)" : "black",
                   fontWeight: isActive ? "bolder" : "normal",
                 })}
               >
                 Home
-                <span></span>
-              </NavLink>
-
-              <NavLink
-                className="text-decoration-none navStyling"
-                to="/menu"
-                style={({ isActive }) => ({
-                  color: isActive ? "rgb(231, 154, 57)" : "white",
-                  fontWeight: isActive ? "bolder" : "normal",
-                })}
-              >
-                Menu
                 <span></span>
               </NavLink>
 
@@ -92,43 +78,14 @@ const Navbar = () => {
               </NavLink>
               <NavLink
                 className="text-decoration-none navStyling"
-                to="/service"
+                to="/portfolio"
                 style={({ isActive }) => ({
                   color: isActive ? "rgb(231, 154, 57)" : "white",
                   fontWeight: isActive ? "bolder" : "normal",
                 })}
               >
-                Service
+                Portfolio
                 <span></span>
-              </NavLink>
-              <NavLink
-                className="text-decoration-none navStyling"
-                to="/events"
-                style={({ isActive }) => ({
-                  color: isActive ? "rgb(231, 154, 57)" : "white",
-                  fontWeight: isActive ? "bolder" : "normal",
-                })}
-              >
-                Events
-                <span></span>
-              </NavLink>
-              <NavLink
-                className="text-decoration-none  px-md-2 py-2 GeneralBackground text-dark text-nowrap rounded-pill"
-                to="/book_a_table"
-                style={({ isActive }) => ({
-                  color: isActive ? "rgb(231, 154, 57)" : "white",
-                  fontWeight: isActive ? "bolder" : "normal",
-                })}
-              >
-                Book A Table
-                <span></span>
-              </NavLink>
-
-              <NavLink
-                className="text-decoration-none p-2 rounded-circle GeneralBackground"
-                to="/cart"
-              >
-                <FontAwesomeIcon icon={faCartPlus} className="text-white" />
               </NavLink>
             </ul>
           </div>
@@ -264,4 +221,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavBar;

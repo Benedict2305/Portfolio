@@ -2,9 +2,9 @@ import React from "react";
 import "./Contact.css";
 const Contact = () => {
   return (
-    <div className="container-xl my-5">
+    <section className="container-xl mb-5">
       <div className="row">
-        <div className="GetInTouch-title d-flex justify-content-center mx-auto align-items-center my-5">
+        <div className="GetInTouch-title d-flex justify-content-center mx-auto align-items-center my-3">
           <p className="fw-bolder">Get In Touch</p>
         </div>
       </div>
@@ -63,14 +63,14 @@ const Contact = () => {
             ></textarea>
             <button
               type="submit"
-              className="submitBtn border-0 rounded-pill px-4 py-2 fs-5 fw-bolder mt-3"
+              className="submitBtn border-0 rounded-pill px-4 py-1 fs-5 fw-bolder mt-3"
             >
               Submit Now
             </button>
           </form>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

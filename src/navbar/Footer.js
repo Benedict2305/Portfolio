@@ -2,22 +2,23 @@ import React from "react";
 import "./Footer.css";
 import { NavLink } from "react-bootstrap";
 import { useState, useEffect } from "react";
-
+import benedictLogo from '../images/benedictLogo.png'
 const Footer = () => {
+
   const [copyRightDate, setCopyRightDate] = useState("");
   useEffect(() => {
     const getRunningDate = new Date();
     const runningYear = getRunningDate.getFullYear();
     setCopyRightDate(runningYear);
-    // console.log(runningYear)
   }, []);
+
   return (
     <div className="container-xl mb-4">
       <div className="row">
         <div className="col-12">
           <div className="row align-items-center justify-content-center">
             <div className="col-md-6 footerBrand">
-              <h1>Benedict</h1>
+              <img src={benedictLogo} width={150} alt="" />
               <p className="fs-5">
                 I am an experienced Frontend Developer with lots of professional
                 expertise in the field.

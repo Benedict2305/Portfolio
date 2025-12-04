@@ -1,6 +1,6 @@
 
 
-.myworkImageDiv img{
+/* .myworkImageDiv img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -64,12 +64,12 @@
 
 @media(min-width:321px)  {
     .myWorkGalleryDiv{
-        /* background-color: red; */
+        
         width: 100%;
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
-        /* justify-content: space-evenly; */
+    
         align-items: center;
         row-gap: 12px;
         column-gap: 8px;
@@ -115,5 +115,141 @@
     align-content: flex-start;
     height: 31vh;
     margin: 0 auto;
+}
+} */
+
+
+
+
+
+
+
+
+ .myworkImageDiv img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+
+
+.myWork-title{
+   position: relative;
+    width: 320px;
+    height: 50px;
+    overflow: hidden;
+    z-index: 1; 
+}
+
+.myWork-title::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    padding: 6px;
+    border-radius: 12px;
+    z-index: -1;
+    background-size: 30px 30px;
+    animation: movingZigzag 3s linear infinite;
+    background: repeating-linear-gradient(45deg, #da7c25 0 6px, transparent 6px 12px),repeating-linear-gradient(-45deg, #b923e1 0 6px, transparent 6px 12px);
+    mask: linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
+    mask-composite: exclude;
+}
+
+@keyframes movingZigzag{
+    0%{background-position: 0 0, 0 0;}
+    100%{
+        background-position: 60px 60px, -60px -60px;
+    }
+}
+
+.myWork-title p{
+    font-size: 36px;
+}
+
+
+
+ .card{
+    
+    padding: 1rem 1rem;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0px 7px 10px rgba(0,0,0,.5);
+    transition: .5s ease-in-out;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.card:hover{
+    transform: translateY(20px);
+
+}
+
+.card::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150, 201,61,1));
+    z-index: 2;
+    transition: .5s all;
+    opacity: 0;
+}
+
+.card:hover::before{
+    opacity: 1;
+
+}
+
+.card .info{
+    position: relative;
+    background-color: transparent;
+    z-index: 3;
+    color: white;
+    opacity: 0;
+    transform: translateY(2px);
+     transition: .5s all;
+}
+.card .info h1, .card .info p{
+    background-color: transparent; 
+}
+
+.card .info p{
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    text-shadow: 0px 3px 3px  #000;
+}
+
+.card:hover .info{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+    .card2{
+    padding: 6rem 1rem;  
+}
+    .card2 img{
+     object-position: center .1rem;
+}
+
+.cardAnniversary{
+    padding: 4rem 1rem; 
+}
+
+.cardAnniversary2{
+    padding: 7rem 1rem; 
 }
 }
