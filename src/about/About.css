@@ -1,6 +1,6 @@
 .About-title{
     position: relative;
-    width: 320px;
+    width: fit-content;
     overflow: hidden;
     z-index: 1;
 }
@@ -28,7 +28,6 @@
 
 .about-image{
     width: fit-content;
-    /* height: 25rem; */
 }
 
 .about-image img{
@@ -46,10 +45,9 @@
     font-size: 1.25rem;
 }
 
-.about-skill hr{
+.about-skill span{
     outline: none;
     border: none;
-    /* width: 50%; */
     height: 0.5rem;
     border-radius: 3.125rem;
     background: linear-gradient(267deg, #da7c25 15%, #b923e1 102.6%);

@@ -3,9 +3,9 @@ import "./About.css";
 import benImage from "../images/ben1.jpg";
 const About = () => {
   return (
-    <div className="container-xl mb-4">
-      <div className="row my-5">
-        <div className="About-title d-flex justify-content-center align-items-center mx-auto"><h1 className="text-center">About me</h1></div>
+    <section className="container-fluid px-md-5 bg-dark">
+      <div className="row ">
+        <div className="About-title d-flex justify-content-center align-items-center mx-auto my-3"><h1 className="text-center">About me</h1></div>
       </div>
 
       <div className="row d-md-flex align-items-center">
@@ -31,24 +31,24 @@ const About = () => {
               </p>
             </div>
 
-            <div className="about-skills d-flex flex-column gap-">
-              <div className="about-skill d-flex align-items-center gap-4">
+            <div className="about-skills d-flex flex-column ">
+              <div className="about-skill d-flex align-items-center gap-4 ">
                 <p className="">HTML & CSS</p>{" "}
-                <hr style={{ width: "70%" }} />
+                <span style={{ width: "76%" }} />
               </div>
-              <div className="about-skill d-flex align-items-center gap-4">
+              <div className="about-skill d-flex align-items-center gap-4 ">
                 <p className="">JAVASCRIPT </p>{" "}
-                <hr style={{ width: "67%" }} />
+                <span style={{ width: "77%" }} />
               </div>
-              <div className="about-skill d-flex align-items-center gap-4">
+              <div className="about-skill d-flex align-items-center gap-4 ">
                 <p className="">REACT JS </p>{" "}
-                <hr style={{ width: "70%" }} />
+                <span style={{ width: "80%" }} />
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

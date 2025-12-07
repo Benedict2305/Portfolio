@@ -4,17 +4,18 @@ import "../index.css";
 
 import mywork_data from "../components/mywork_data";
 const MyWork = () => {
-  const handleClick = (url) =>{
-      window.open(url, '_blank');
+
+  const handleClick = (eachUrl) =>{
+      window.open(eachUrl, '_blank');
     };
   return (
     
-    <>
-      <div className="myWork-title d-flex justify-content-center mx-auto align-items-center mt-3 mb-5">
+    <section className="bg-dark pt-4">
+      <div className="myWork-title d-flex justify-content-center mx-auto align-items-center pt-1 mb-5 bg-dark">
         <p className="fw-bolder">My Latest Work</p>{" "}
       </div>
 
-      <div className=" d-md-flex justify-content-center gap-5 flex-wrap mt-3 mb-5">
+      <div className=" d-md-flex justify-content-center gap-5 flex-wrap pb-5 bg-dark">
         {mywork_data.map((portfolio, index) => {
           return (
             <div
@@ -36,12 +37,11 @@ const MyWork = () => {
                   
                 </article>
               </div>
-              
             </div>
           );
         })}
       </div>
-    </>
+    </section>
   );
 };
 

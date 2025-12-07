@@ -13,7 +13,7 @@ const Footer = () => {
   }, []);
 
   return (
-    <div className="container-xl mb-4">
+    <div className="container-fluid mb-4 bg-dark py-3 position-absolute buttom-0 px-md-5">
       <div className="row">
         <div className="col-12">
           <div className="row align-items-center justify-content-center">
@@ -49,7 +49,7 @@ const Footer = () => {
               {" "}
               <p>© {copyRightDate}  All rights reserved.</p>
             </div>
-            <div className="col-md-7 col-lg-6 d-flex justify-content-evenl gap-3 footer">
+            <div className="col-md-7 col-lg-6 d-flex justify-content-evenl column-gap-3 footer flex-wrap">
               <NavLink className=" footerTerms text-nowrap">Terms of services</NavLink>
               <NavLink className="footerTerms text-nowrap">Privacy Policy </NavLink>
               <NavLink className="footerTerms text-nowrap">Connect with me</NavLink>

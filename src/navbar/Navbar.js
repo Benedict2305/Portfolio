@@ -1,24 +1,18 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {  faCartPlus } from "@fortawesome/free-solid-svg-icons";
-import "./Navbar.css";
-// import logoImage from "../images/benedict-high-resolution-logo.png";
-import benedictLogo from '../images/benedictLogo.png'
+import { NavLink} from "react-router-dom";
+import "./NavBar.css";
+import benlogo from '../images/benedictLogo.png'
+// import "../component/GeneralStyles.css";
 
 const NavBar = () => {
   return (
-    <nav className="navbar navbar-expand-md bg-dark sticky-top w-100 ">
-      <div className="container-fluid d-flex align-item-center justify-content-between px-lg-5">
+    <header className="py-3 bg-dark sticky-top">
+    <nav className="navbar navbar-expand-md   ">
+      <div className="container-fluid px-md-5 d-flex align-item-center justify-content-between">
         <div className="navbar-brandDiv d-flex align-items-center justify-content-center">
-          <NavLink className="navbar-brand d-flex align-items-center justify-content-center">
-            <img
-              src={benedictLogo}
-              alt=""
-              width={150}
-              height={70}
-              style={{ objectFit: "contain" }}
-            />
+          <NavLink className="navbar-brand d-flex align-items-center justify-content-center text-white" style = {{ fontFamily:'Hanalei',fontSize: 22 + 'px', letterSpacing:3}}>
+            {/* <img src={benlogo} width={150} alt="" /> */}
+            Benedict
           </NavLink>
         </div>
 
@@ -38,53 +32,50 @@ const NavBar = () => {
           </button>
         </div>
 
-        <div className=" d-none d-md-block ">
+        <div className=" d-none d-md-block me-md-5">
           <div>
-            <ul className="navbar-nav nav-underline d-flex justify-content-between  align-items-center ">
+            <ul className="navbar-nav nav-underline d-flex justify-content-center align-items-center ">
               <NavLink
-                className="text-decoration-none  navStyling"
-                to="/"
-                style={({ isActive }) => ({
-                  background: isActive ? "rgb(231, 154, 57)" : "black",
-                  fontWeight: isActive ? "bolder" : "normal",
-                })}
+                className="text-decoration-none  navStyling bb"
+                to="/" 
               >
                 Home
                 <span></span>
               </NavLink>
 
               <NavLink
-                className="text-decoration-none navStyling text-nowrap"
+                className="text-decoration-none navStyling"
                 to="/about"
                 style={({ isActive }) => ({
-                  color: isActive ? "rgb(231, 154, 57)" : "white",
+                  color: isActive ? "cyan" : "white",
                   fontWeight: isActive ? "bolder" : "normal",
                 })}
               >
-                About
+                About Us
                 <span></span>
               </NavLink>
 
               <NavLink
-                className="text-decoration-none navStyling text-nowrap"
-                to="/contact"
-                style={({ isActive }) => ({
-                  color: isActive ? "rgb(231, 154, 57)" : "white",
-                  fontWeight: isActive ? "bolder" : "normal",
-                })}
-              >
-                Contact
-                <span></span>
-              </NavLink>
-              <NavLink
                 className="text-decoration-none navStyling"
                 to="/portfolio"
                 style={({ isActive }) => ({
-                  color: isActive ? "rgb(231, 154, 57)" : "white",
+                  color: isActive ? "cyan" : "white",
                   fontWeight: isActive ? "bolder" : "normal",
                 })}
               >
                 Portfolio
+                <span></span>
+              </NavLink>
+
+              <NavLink
+                className="text-decoration-none navStyling"
+                to="/contact"
+                style={({ isActive }) => ({
+                  color: isActive ? "cyan" : "white",
+                  fontWeight: isActive ? "bolder" : "normal",
+                })}
+              >
+                Contact
                 <span></span>
               </NavLink>
             </ul>
@@ -92,18 +83,15 @@ const NavBar = () => {
         </div>
       </div>
 
-      <div
-        className=" side-width position-fixed top-0 start-0 w-100  d-md-none hoverTextDiv"
-        style={{ marginTop: 4.75 + "rem" }}
-      >
+      <div className=" side-width position-fixed top-0 start-0 mt-5 w-100  d-md-none hoverTextDiv">
         <div
-          className="collapse  navbar-collapse   phone-nav-color phoneBorder"
+          className="collapse  navbar-collapse  pb-3 phone-nav-color phoneBorder "
           id="navbarNav"
         >
-          <ul className="navbar-nav nav-underline phone-transform  ">
+          <ul className="navbar-nav nav-underline phone-transform mt-3 ">
             <li className=" hoverText nav-item ">
               <NavLink
-                className="text-decoration-none fs-5 py-1 text-center  hoverText d-block w-100 liNav"
+                className="text-decoration-none fs-5 py-2 text-center  hoverText d-block w-100 liNav"
                 to="/"
                 style={({ isActive }) => ({
                   color: isActive ? "cyan" : "white",
@@ -115,23 +103,10 @@ const NavBar = () => {
                 </span>
               </NavLink>
             </li>
+            
             <li className="hoverText nav-item ">
               <NavLink
-                className="text-decoration-none fs-5 py-1 text-center  hoverText d-block w-100 liNav"
-                to="/menu"
-                style={({ isActive }) => ({
-                  color: isActive ? "cyan" : "white",
-                  fontWeight: isActive ? "bolder" : "normal",
-                })}
-              >
-                <span data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                  Menu
-                </span>
-              </NavLink>
-            </li>
-            <li className="hoverText nav-item ">
-              <NavLink
-                className="text-decoration-none fs-5 py-1 text-center hoverText d-block w-100 liNav"
+                className="text-decoration-none fs-5 py-2 text-center hoverText d-block w-100 liNav"
                 to="/about"
                 style={({ isActive }) => ({
                   color: isActive ? "cyan" : "white",
@@ -139,13 +114,28 @@ const NavBar = () => {
                 })}
               >
                 <span data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                  About
+                  About Us
+                </span>
+              </NavLink>
+            </li>
+
+            <li className="hoverText nav-item ">
+              <NavLink
+                className="text-decoration-none fs-5 py-2 text-center hoverText d-block w-100 liNav"
+                to="/about"
+                style={({ isActive }) => ({
+                  color: isActive ? "cyan" : "white",
+                  fontWeight: isActive ? "bolder" : "normal",
+                })}
+              >
+                <span data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                  PortFolio
                 </span>
               </NavLink>
             </li>
             <li className="hoverText nav-item ">
               <NavLink
-                className="text-decoration-none fs-5 py-1  hoverText d-block w-100 liNav text-center"
+                className="text-decoration-none fs-5 py-2  hoverText d-block w-100 liNav text-center"
                 to="/contact"
                 style={({ isActive }) => ({
                   color: isActive ? "cyan" : "white",
@@ -153,71 +143,15 @@ const NavBar = () => {
                 })}
               >
                 <span data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                  Contact
+                  Contact us
                 </span>
               </NavLink>
-            </li>
-
-            <li className="hoverText nav-item ">
-              <NavLink
-                className="text-decoration-none fs-5 py-1  hoverText d-block w-100 liNav text-center"
-                to="/service"
-                style={({ isActive }) => ({
-                  color: isActive ? "cyan" : "white",
-                  fontWeight: isActive ? "bolder" : "normal",
-                })}
-              >
-                <span data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                  Services
-                </span>
-              </NavLink>
-            </li>
-
-            <li className="hoverText nav-item ">
-              <NavLink
-                className="text-decoration-none fs-5 py-1  hoverText d-block w-100 liNav text-center"
-                to="/events"
-                style={({ isActive }) => ({
-                  color: isActive ? "cyan" : "white",
-                  fontWeight: isActive ? "bolder" : "normal",
-                })}
-              >
-                <span data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                  Events
-                </span>
-              </NavLink>
-            </li>
-
-            <NavLink
-              className="text-decoration-none fs-5 py-1 hoverTex d-block w-100 text-center"
-              to="/cart"
-            >
-              <span
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav"
-                className="border-warning border rounded-circle p-3"
-              >
-                <FontAwesomeIcon icon={faCartPlus} className="text-white" />
-              </span>
-            </NavLink>
-
-            <NavLink
-              className="text-decoration-none px-2 px-md-4 py-2 bg-warning text-dark w-50 mx-auto rounded-pill text-center fw-bolder"
-              to="/book_a_table"
-              role="button"
-              style={({ isActive }) => ({
-                color: isActive ? "cyan" : "white",
-                fontWeight: isActive ? "bolder" : "normal",
-              })}
-            >
-              <span data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                Book A Table
-              </span>
-            </NavLink>
+            </li>          
           </ul>
         </div>
       </div>
     </nav>
+    </header>
   );
 };
 

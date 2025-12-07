@@ -2,12 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: white;
-  background-color: black;
+  color: whitesmoke;
 }
 
 .body{
   height: 100vh;
   font-family: outfit;
-  
+   
 }

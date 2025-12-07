@@ -1,7 +1,6 @@
 .GetInTouch-title{
    position: relative;
-    width: 320px;
-    height: 50px;
+    width: fit-content;
     overflow: hidden;
     z-index: 1; 
 }
@@ -27,7 +26,7 @@
     }
 }
 
-.GetInTouch-title p{
+.GetInTouch-title span{
     font-size: 36px;
 }
 

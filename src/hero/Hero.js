@@ -4,7 +4,7 @@ import "./Hero.css";
 import ben1Image from "../images/ben1.jpg";
 const Hero = () => {
   return (
-    <div className="container-fluid mt-5 pt-3 pb-4">
+    <section className="container-fluid py-5 bg-dark">
       <div className="row ">
         <div className="col-md-10 col-xl-7 d-flex flex-column justify-content-center align-items-center gap-1 mx-auto">
           <div className="heroImage">
@@ -26,7 +26,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

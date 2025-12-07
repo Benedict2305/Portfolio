@@ -8,17 +8,20 @@ import Contact from './contact/Contact'
 import Footer from './navbar/Footer'
 const App = () => {
   return (
-    <BrowserRouter>
-        <NavBar/>
+     (
+    <>
+      <BrowserRouter>
+        <NavBar />
         <Routes>
-          <Route path='/' Component={Hero}/>
-          <Route path='/about' Component={About}/>
-          <Route path='/portfolio' Component={MyWork}/>
-          <Route path='/contact' Component={Contact}/>
+          <Route path='/' element={<Hero />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/portfolio' element={<MyWork />} />
+          <Route path='/contact' element={<Contact />} />
         </Routes>
         <Footer />
       </BrowserRouter>
-  )
-}
+    </>
+  ));
+};
 
 export default App

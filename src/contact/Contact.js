@@ -2,10 +2,10 @@ import React from "react";
 import "./Contact.css";
 const Contact = () => {
   return (
-    <section className="container-xl mb-5">
-      <div className="row">
-        <div className="GetInTouch-title d-flex justify-content-center mx-auto align-items-center my-3">
-          <p className="fw-bolder">Get In Touch</p>
+    <section className="container-fluid  bg-dark px-md-5 pb-4">
+      <div className="row ">
+        <div className="GetInTouch-title d-flex justify-content-center mx-auto align-items-center mt-4 mb-2">
+          <span className="fw-bolder ">Get In Touch</span>
         </div>
       </div>
       <div className="row">

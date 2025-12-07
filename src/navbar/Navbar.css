@@ -1,15 +1,48 @@
+header {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-expand-md {
+  border-top: none;
+  border-bottom: none;
+}
+
+.bb{
+  color: wheat;
+}
+
+.bb:focus{
+  /* color:white; */
+  background:linear-gradient(270deg, #df8908 10%, #b415ff 100% ) ;
+  background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-weight: 900;
+}
+
+
+
+
 .navStyling{
     position: relative;
     font-size: 1.1em;
     font-weight: 500;
     color: #333;
-    padding: 0 .1rem;
+    padding: 0 1.1rem;
     transition: .5s;
     color: white;
 }
 
 .navStyling:hover{
-color:rgb(231, 154, 57);
+color: white;
 }
 
 .navStyling span{
@@ -19,7 +52,20 @@ color:rgb(231, 154, 57);
     width: 100%;
     height: 100%;
     z-index: -1;
-    border-bottom: 2px solid rgb(231, 154, 57);
+    border-bottom: 2px solid cyan;
+    border-radius: 0.9rem;
+    transform: scale(0) translateY(3.04rem);
+    opacity: 0;
+    transition: .5s;
+}
+.navStyling span:focus{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-bottom: 2px solid cyan;
     border-radius: 0.9rem;
     transform: scale(0) translateY(3.04rem);
     opacity: 0;
@@ -27,6 +73,11 @@ color:rgb(231, 154, 57);
 }
 
 .navStyling:hover span{
+    transform: scale(1) translateY(0);
+    opacity: 1;
+}
+
+.navStyling:focus span{
     transform: scale(1) translateY(0);
     opacity: 1;
 }
@@ -41,16 +92,4 @@ z-index: 22;
 .hoverTextDiv ul li:hover{
 background-color: #333;
 transition: .7s linear;
-}
-
-@media (min-width:768px) {
-    .navStyling{
-    padding: 0 .4rem;
-}
-}
-
-@media (min-width:1200px) {
-    .navStyling{
-    padding: 0 1.3rem;
-}
 }
