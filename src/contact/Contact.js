@@ -2,7 +2,7 @@ import React from "react";
 import "./Contact.css";
 const Contact = () => {
   return (
-    <section className="container-fluid  bg-dark px-md-5 pb-4">
+    <section className="container-fluid   px-md-5 pb-4" style={{backgroundColor:'#280b08'}}>
       <div className="row ">
         <div className="GetInTouch-title d-flex justify-content-center mx-auto align-items-center mt-4 mb-2">
           <span className="fw-bolder ">Get In Touch</span>

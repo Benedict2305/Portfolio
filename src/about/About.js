@@ -3,7 +3,7 @@ import "./About.css";
 import benImage from "../images/ben1.jpg";
 const About = () => {
   return (
-    <section className="container-fluid px-md-5 bg-dark">
+    <section className="container-fluid px-md-5 " style={{backgroundColor:'#280b08'}}>
       <div className="row ">
         <div className="About-title d-flex justify-content-center align-items-center mx-auto my-3"><h1 className="text-center">About me</h1></div>
       </div>

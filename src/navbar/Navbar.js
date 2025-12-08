@@ -5,12 +5,13 @@ import benlogo from '../images/benedictLogo.png'
 // import "../component/GeneralStyles.css";
 
 const NavBar = () => {
+  
   return (
-    <header className="py-3 bg-dark sticky-top">
+    <header className="py-3  sticky-top" style={{backgroundColor:'#280b08'}}>
     <nav className="navbar navbar-expand-md   ">
       <div className="container-fluid px-md-5 d-flex align-item-center justify-content-between">
         <div className="navbar-brandDiv d-flex align-items-center justify-content-center">
-          <NavLink className="navbar-brand d-flex align-items-center justify-content-center text-white" style = {{ fontFamily:'Hanalei',fontSize: 22 + 'px', letterSpacing:3}}>
+          <NavLink className="navbar-brand d-flex align-items-center justify-content-center text-white" style = {{ fontFamily:'Hanalei',fontSize: 30 + 'px', letterSpacing:3}}>
             {/* <img src={benlogo} width={150} alt="" /> */}
             Benedict
           </NavLink>
@@ -35,31 +36,36 @@ const NavBar = () => {
         <div className=" d-none d-md-block me-md-5">
           <div>
             <ul className="navbar-nav nav-underline d-flex justify-content-center align-items-center ">
+              
+
               <NavLink
-                className="text-decoration-none  navStyling bb"
-                to="/" 
+                className="text-decoration-none navStyling rounded-pill"
+                to="/"
+                style={({ isActive }) => ({
+                  background: isActive ? "linear-gradient(270deg, #df8908 10%, #b415ff 100% )" : "black",
+                  fontWeight: isActive ? "bolder" : "normal",
+                })}
               >
                 Home
                 <span></span>
               </NavLink>
-
               <NavLink
-                className="text-decoration-none navStyling"
+                className="text-decoration-none navStyling rounded-pill"
                 to="/about"
                 style={({ isActive }) => ({
-                  color: isActive ? "cyan" : "white",
+                  background: isActive ? "linear-gradient(270deg, #df8908 10%, #b415ff 100% )" : "black",
                   fontWeight: isActive ? "bolder" : "normal",
                 })}
               >
-                About Us
+                About
                 <span></span>
               </NavLink>
 
               <NavLink
-                className="text-decoration-none navStyling"
+                className="text-decoration-none navStyling rounded-pill"
                 to="/portfolio"
                 style={({ isActive }) => ({
-                  color: isActive ? "cyan" : "white",
+                  background: isActive ? "linear-gradient(270deg, #df8908 10%, #b415ff 100% )" : "black",
                   fontWeight: isActive ? "bolder" : "normal",
                 })}
               >
@@ -68,10 +74,10 @@ const NavBar = () => {
               </NavLink>
 
               <NavLink
-                className="text-decoration-none navStyling"
+                className="text-decoration-none navStyling rounded-pill"
                 to="/contact"
                 style={({ isActive }) => ({
-                  color: isActive ? "cyan" : "white",
+                  background: isActive ? "linear-gradient(270deg, #df8908 10%, #b415ff 100% )" : "black",
                   fontWeight: isActive ? "bolder" : "normal",
                 })}
               >

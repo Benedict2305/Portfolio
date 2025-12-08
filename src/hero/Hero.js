@@ -1,10 +1,9 @@
 import React from "react";
 import "./Hero.css";
-// import "../index.css"
 import ben1Image from "../images/ben1.jpg";
 const Hero = () => {
   return (
-    <section className="container-fluid py-5 bg-dark">
+    <section className="container-fluid py-5" style={{backgroundColor:'#280b08'}}>
       <div className="row ">
         <div className="col-md-10 col-xl-7 d-flex flex-column justify-content-center align-items-center gap-1 mx-auto">
           <div className="heroImage">

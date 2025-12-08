@@ -13,12 +13,12 @@ const Footer = () => {
   }, []);
 
   return (
-    <div className="container-fluid mb-4 bg-dark py-3 position-absolute buttom-0 px-md-5">
+    <div className="container-fluid mb-4  py-3 position-absolute buttom-0 px-md-5" style={{backgroundColor:'#280b08'}}>
       <div className="row">
         <div className="col-12">
           <div className="row align-items-center justify-content-center">
             <div className="col-md-6 footerBrand">
-              <img src={benedictLogo} width={150} alt="" />
+              <h1>Benedict</h1>
               <p className="fs-5">
                 I am an experienced Frontend Developer with lots of professional
                 expertise in the field.

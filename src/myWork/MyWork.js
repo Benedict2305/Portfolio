@@ -3,6 +3,7 @@ import "./MyWork.css";
 import "../index.css";
 
 import mywork_data from "../components/mywork_data";
+
 const MyWork = () => {
 
   const handleClick = (eachUrl) =>{
@@ -10,12 +11,12 @@ const MyWork = () => {
     };
   return (
     
-    <section className="bg-dark pt-4">
-      <div className="myWork-title d-flex justify-content-center mx-auto align-items-center pt-1 mb-5 bg-dark">
+    <section className=" pt-4" style={{backgroundColor:'#280b08'}}>
+      <div className="myWork-title d-flex justify-content-center mx-auto align-items-center pt-1 mb-5 ">
         <p className="fw-bolder">My Latest Work</p>{" "}
       </div>
 
-      <div className=" d-md-flex justify-content-center gap-5 flex-wrap pb-5 bg-dark">
+      <div className=" d-md-flex justify-content-center gap-5 flex-wrap pb-5 " style={{backgroundColor:'#280b08'}}>
         {mywork_data.map((portfolio, index) => {
           return (
             <div
@@ -25,7 +26,7 @@ const MyWork = () => {
               <img src={portfolio.w_img} alt="" />
               <div className="info">
                 <h1>{portfolio.w_name}</h1>
-                <p>{portfolio.w_detain}</p>
+                <p>{portfolio.w_detail}</p>
 
                 <article className="" style={{width:'fit-content', background:'transparent'}} >
                     <input
