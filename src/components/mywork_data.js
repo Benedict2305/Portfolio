@@ -22,23 +22,8 @@ const mywork_data = [
         w_name:"BreakFast Place",
         w_img:project3,
          w_detail:"An unforgettable experience that highlighted our fusion of traditional and contemporary flavors."
-    },
-    {
-        w_name:"web Design",
-        w_img:project4,
-         w_detail:"An unforgettable experience that highlighted our fusion of traditional and contemporary flavors."
-    },
-    {
-        w_name:"web Design",
-        w_img:project5,
-         w_detail:"An unforgettable experience that highlighted our fusion of traditional and contemporary flavors."
     }
-    ,
-    {
-        w_name:"web Design",
-        w_img:project6,
-         w_detail:"An unforgettable experience that highlighted our fusion of traditional and contemporary flavors."
-    }
+    
 ]
 
 export default mywork_data

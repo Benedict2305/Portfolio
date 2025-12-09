@@ -34,15 +34,15 @@ const About = () => {
             <div className="about-skills d-flex flex-column ">
               <div className="about-skill d-flex align-items-center gap-4 ">
                 <p className="">HTML & CSS</p>{" "}
-                <span style={{ width: "76%" }} />
+                <span style={{ width: "65%" }} />
               </div>
               <div className="about-skill d-flex align-items-center gap-4 ">
                 <p className="">JAVASCRIPT </p>{" "}
-                <span style={{ width: "77%" }} />
+                <span style={{ width: "59%" }} />
               </div>
               <div className="about-skill d-flex align-items-center gap-4 ">
                 <p className="">REACT JS </p>{" "}
-                <span style={{ width: "80%" }} />
+                <span style={{ width: "60%" }} />
               </div>
             </div>
           </div>

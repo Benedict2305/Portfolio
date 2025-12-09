@@ -45,7 +45,7 @@ const Contact = () => {
               type="text"
               id="yourName"
               placeholder="Enter Your Name"
-              name="name"
+              name="User_email"
             />
             <label htmlFor="yourEmail">Your Email</label>
             <input
@@ -53,6 +53,13 @@ const Contact = () => {
               id="yourName"
               placeholder="Enter Your Email"
               name="email"
+            />
+            <label htmlFor="subject">Subject</label>
+            <input
+              type="email"
+              id="subject"
+              placeholder="Enter Your Email"
+              name="subject"
             />
             <label htmlFor="message">Write your message here</label>
             <textarea
