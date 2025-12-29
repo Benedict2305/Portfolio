@@ -1,18 +1,19 @@
 import React from "react";
+import { useState } from "react";
 import { NavLink} from "react-router-dom";
 import "./NavBar.css";
 import benlogo from '../images/benedictLogo.png'
+import AnchorLink from "react-anchor-link-smooth-scroll";
 // import "../component/GeneralStyles.css";
 
 const NavBar = () => {
-  
   return (
-    <header className="py-3  sticky-top" style={{backgroundColor:'#280b08'}}>
-    <nav className="navbar navbar-expand-md   ">
+    <header className="  sticky-top px-5 d-flex justify-content-between align-items-center" style={{backgroundColor:'#280b08'}}>
+    <nav className="navbar navbar-expand-md  w-100">
       <div className="container-fluid px-md-5 d-flex align-item-center justify-content-between">
         <div className="navbar-brandDiv d-flex align-items-center justify-content-center">
           <NavLink className="navbar-brand d-flex align-items-center justify-content-center text-white" style = {{ fontFamily:'Hanalei',fontSize: 30 + 'px', letterSpacing:3}}>
-            {/* <img src={benlogo} width={150} alt="" /> */}
+            
             Benedict
           </NavLink>
         </div>
@@ -33,11 +34,9 @@ const NavBar = () => {
           </button>
         </div>
 
-        <div className=" d-none d-md-block me-md-5">
-          <div>
-            <ul className="navbar-nav nav-underline d-flex justify-content-center align-items-center ">
-              
-
+        <div className=" d-none d-md-block me-md-5 ">
+          <div className="">
+            <ul className="navbar-nav nav-underline">
               <NavLink
                 className="text-decoration-none navStyling rounded-pill"
                 to="/"
@@ -89,13 +88,13 @@ const NavBar = () => {
         </div>
       </div>
 
-      <div className=" side-width position-fixed top-0 start-0 mt-5 w-100  d-md-none hoverTextDiv">
+      <div className=" side-width position-fixed top-0 start-0  w-100  d-md-none hoverTextDiv">
         <div
           className="collapse  navbar-collapse  pb-3 phone-nav-color phoneBorder "
           id="navbarNav"
         >
           <ul className="navbar-nav nav-underline phone-transform mt-3 ">
-            <li className=" hoverText nav-item ">
+            <li className=" hoverText nav-item " >
               <NavLink
                 className="text-decoration-none fs-5 py-2 text-center  hoverText d-block w-100 liNav"
                 to="/"
@@ -128,7 +127,7 @@ const NavBar = () => {
             <li className="hoverText nav-item ">
               <NavLink
                 className="text-decoration-none fs-5 py-2 text-center hoverText d-block w-100 liNav"
-                to="/about"
+                to="/portfolio"
                 style={({ isActive }) => ({
                   color: isActive ? "cyan" : "white",
                   fontWeight: isActive ? "bolder" : "normal",
@@ -156,7 +155,7 @@ const NavBar = () => {
           </ul>
         </div>
       </div>
-    </nav>
+    </nav> 
     </header>
   );
 };

@@ -26,7 +26,8 @@ background-clip: text;
 
 .hero-action{
     gap: 25px;
-    font-size: 1.5rem;  
+    font-size: 1.5rem;
+     
 }
 
 .hero-action .hero-connect{

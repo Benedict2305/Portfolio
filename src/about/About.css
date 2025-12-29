@@ -58,6 +58,23 @@
     transition: 0.3s;
 }
 
+.about_skills_container .about_skills figure{
+width: 18%;
+height: 8%;
+}
+
+.about_skills_container .about_skills figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: 5/5;
+    transition: .5s;
+}
+.about_skills_container .about_skills figure:hover img{
+   transform: scale(1.1);
+}
+
 @media (max-width:767.9px) {
    .About-title{
     width: 50%;
@@ -71,4 +88,22 @@
     min-width: 9.4rem;
     font-size: 1.25rem;
 } 
+
+.about_skills_container .about_skills figure{
+width: 10%;
+height: 10%;
+}
+
+}
+@media (min-width:1024px) {
+   .about-skill p{
+    min-width: 9.4rem;
+    font-size: 1.25rem;
+} 
+
+.about_skills_container .about_skills figure{
+width: 7%;
+height: 10%;
+}
+
 }

@@ -28,6 +28,23 @@ transition: 0.5s;
     transform: scale(1.5);
 }
 
+.footer_icon i{
+    animation: animeFooterIconDrop 2s linear;
+}
+
+@keyframes animeFooterIconDrop {
+    0%{
+       opacity: 0;
+        transform: translatey(100px);
+    }
+    50%{
+        transform: translatey(50px);
+    }
+    100%{
+        transform: translatey(0);
+    }
+}
+
 @media (max-width:767.9px) {
     .changingReverse{
         display: flex;

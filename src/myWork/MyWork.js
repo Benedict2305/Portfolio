@@ -11,7 +11,7 @@ const MyWork = () => {
     };
   return (
     
-    <section className=" pt-4" style={{backgroundColor:'#280b08'}}>
+    <section id="mywork" className=" py-5 " >
       <div className="myWork-title d-flex justify-content-center mx-auto align-items-center pt-1 mb-5 ">
         <p className="fw-bolder">My Latest Work</p>{" "}
       </div>
@@ -20,7 +20,7 @@ const MyWork = () => {
         {mywork_data.map((portfolio, index) => {
           return (
             <div
-              className="col-lg-3 col-11 col-md-5 card mb-4 mb-md-0"
+              className="col-lg-3 col-11 col-md-5 card mb-4 mb-md-0 mx-auto mx-md-0"
               key={index}
             >
               <img src={portfolio.w_img} alt="" />

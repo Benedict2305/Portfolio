@@ -1,9 +1,6 @@
 import project1 from '../images/senidea.png'
 import project2 from '../images/amala-Ibadan.png'
 import project3 from '../images/breakfast-place.png'
-import project4 from '../images/ben5.jpg'
-import project5 from '../images/ben5.jpg'
-import project6 from '../images/ben5.jpg'
 
 const mywork_data = [
     {
