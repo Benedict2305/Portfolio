@@ -7,12 +7,12 @@ import bootstrap_5_image from '../images/Bootstrap.png'
 import Tailwind_image from '../images/Tailwind CSS.png'
 import Javascript_image from '../images/JavaScript.png'
 import ReactJs_image from '../images/React.png'
-import '../components/General_style.css'
+import '../General_style.css'
 const About = () => {
   return (
     <section id="about" className="container-fluid px-md-5 py-5 " >
       <div className="row ">
-        <div className="About-title d-flex justify-content-center align-items-center mx-auto mb-4 scaleAnime"><h1 className="text-center">About me</h1></div>
+        <div className="About-title d-flex justify-content-center align-items-center mx-auto mb-4 scaleAnime "><h1 className="text-center">About me</h1></div>
       </div>
 
       <div className="row d-md-flex align-items-center">

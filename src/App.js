@@ -1,11 +1,12 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import NavBar from './navbar/NavBar'
-import Hero from './hero/Hero'
-import About from './about/About'
-import MyWork from './myWork/MyWork'
-import Contact from './contact/Contact'
-import Footer from './navbar/Footer'
+import NavBar from './components/navbar/NavBar'
+import Hero from './components/hero/Hero'
+import About from './components/about/About'
+import MyWork from './components/myWork/MyWork'
+import Contact from './components/contact/Contact'
+import Footer from './components/navbar/Footer'
+
 const App = () => {
   return (
      (

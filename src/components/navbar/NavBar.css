@@ -55,3 +55,43 @@ margin-top: 4.4rem;
 background-color: #333;
 transition: .7s linear;
 }
+
+.resumeCVNavBar{
+  font-size: clamp(1.02rem, 1vw, 1.5rem);
+    border: 2px solid white;
+    cursor: pointer;
+    transition: .5s;
+    &:hover{
+      border-color: #b415ff;
+    }
+}
+
+.dropdown-menu li{
+  margin: .4rem 0;
+}
+
+
+.dropdown-menu li a{
+  border: 1px solid #df8908;
+  &:hover{
+    background:linear-gradient(270deg, #df8908 10%, #b415ff 100% );
+    border: 1px solid wheat; 
+  }
+}
+
+@media(min-width:768px) and (max-width:1024px){
+.dropdown-menu {
+  margin-left: -5rem;
+}
+
+.heroContent h1{
+font-size: 4rem;
+}
+}
+
+@media(max-width:768px) {
+.dropdown-menu{
+  background-color: #e60d0d;
+  backdrop-filter: blur(7px);
+}
+}

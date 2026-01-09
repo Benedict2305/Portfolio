@@ -1,0 +1,159 @@
+.heroImage{
+    width: 17rem;
+    height: auto;
+}
+
+.heroImage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.heroContent h1 span{
+background:linear-gradient(270deg, #df8908 10%, #b415ff 100% ) ;
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.heroContent p{
+    /* width: 80%; */
+    text-align: center;
+    font-size: clamp(1.02rem, 5vw, 1.5rem);
+    line-height: 2.5rem;
+}
+
+.hero-action{
+    gap: 25px;
+    font-size: 1.5rem;
+     
+}
+
+.hero-action .hero-connect{
+    /* padding: .3rem 1rem; */
+    font-size: clamp(1.02rem, 5vw, 1.5rem);
+    border-radius: 3.13rem;
+    background: linear-gradient(264deg, #df8908 -5.09%, #b415ff 106.2%);
+    cursor: pointer;
+     transition: .5s;
+     color: white;
+}
+
+.hero-action .hero-resume{
+    /* padding: .3rem 2.3rem; */
+    font-size: clamp(1.02rem, 5vw, 1.5rem);
+    border-radius: 3.13rem;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.hero-action .hero-connect:hover{
+    border: 2px solid white;
+}
+
+.hero-action .hero-resume:hover{
+    border-color: #b415ff;
+}
+
+.splineColParent {
+  max-width: 
+  40%;
+  max-height: 45%;
+  /* background-color: aqua; */
+  overflow: hidden;
+  position: relative;
+  padding: 15rem 0;
+  /* transform: scale(1.5); */
+  
+}
+
+.robot-3d {
+  width: 100%;
+  height: 55rem; /* adjust height */
+  object-fit: contain; /* or cover */
+  position: absolute;
+  top: 0;
+  margin-top: -16rem;
+}
+
+.dropdown-menu li a{
+  border: 1px solid #df8908;
+  &:hover{
+    background:linear-gradient(270deg, #df8908 10%, #b415ff 100% );
+    border: 1px solid wheat; 
+  }
+}
+
+.heroContent h1{
+    font-size: 2.7rem;
+    /* line-height: 2.5rem; */
+} 
+
+@media (max-width:320px) {
+    .hero-action .hero-resume, .hero-action .hero-connect{
+        text-align: center;
+        font-weight: 600;
+    } 
+}
+
+@media (min-width:321px) and (max-width:768px) {
+    .splineColParent {
+  max-width: 
+  100%;
+  max-height: 45%;
+  background-color: aqua;
+  overflow: hidden;
+  position: relative;
+  /* padding: 15rem 0; */
+  /* transform: scale(1.5); */
+  
+}
+
+.robot-3d {
+  width: 100%;
+  height: 40rem; /* adjust height */
+  object-fit: contain; /* or cover */
+  position: absolute;
+  top: 0;
+  margin-top: -14rem;
+}
+
+
+}
+
+@media (min-width:1200px) and (max-width:2000px) {
+    .splineColParent {
+  max-width: 
+  40%;
+  max-height: 45%;
+  /* background-color: aqua; */
+  overflow: hidden;
+  position: relative;
+  /* padding: 15rem 0; */
+  /* transform: scale(1.5); */
+  
+}
+
+.robot-3d {
+  width: 100%;
+  height: 45rem; /* adjust height */
+  object-fit: contain; /* or cover */
+  position: absolute;
+  top: 0;
+  margin-top: -12rem;
+}
+
+.heroContent h1{
+    font-size: 3rem;
+    /* line-height: 2.5rem; */
+}
+}
+
+@media (min-width:2000px) {
+ .heroContent h1{
+    font-size: 4rem;
+    /* line-height: 2.5rem; */
+} 
+}

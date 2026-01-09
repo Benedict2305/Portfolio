@@ -2,7 +2,7 @@ import React from "react";
 import "./Footer.css";
 import { NavLink } from "react-bootstrap";
 import { useState, useEffect } from "react";
-import '../components/General_style.css'
+import '../General_style.css'
 import benedictLogo from "../images/benedictLogo.png";
 const Footer = () => {
   const [copyRightDate, setCopyRightDate] = useState("");

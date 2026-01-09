@@ -1,35 +1,40 @@
 import React from "react";
 import { useRef } from "react";
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
 
 import "./Contact.css";
-import '../components/General_style.css'
+import '../General_style.css'
 const Contact = () => {
-
   const formRef = useRef();
 
-  const sendEmailFuction = (e) =>{
+  const sendEmailFuction = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_ij9q2tc', 'template_ewce1fu',formRef.current, 'JrOG4wDMua7R0X0ZQ')
-    .then(()=>{
-      alert('Message sent successfully');
-      formRef.current.reset()
-    },
-    (error)=>{
-      alert('Failed to send message, please try again', error.text
+    emailjs
+      .sendForm(
+        "service_ij9q2tc",
+        "template_ewce1fu",
+        formRef.current,
+        "JrOG4wDMua7R0X0ZQ"
       )
-    }
-  )
-  }
+      .then(
+        () => {
+          alert("Message sent successfully");
+          formRef.current.reset();
+        },
+        (error) => {
+          alert("Failed to send message, please try again", error.text);
+        }
+      );
+  };
   return (
-    <section id="contact" className="container-fluid  px-md-5">
-      <div className="row ">
+    <section id="contact" className="container-fluid  px-md-5 py-4 py-md-0">
+      <div className="row mb-md-5 mb-lg-0">
         <div className="GetInTouch-title d-flex justify-content-center mx-auto align-items-center mt-2 mb-2">
           <span className="fw-bolder ">Get In Touch</span>
         </div>
       </div>
-      <div className="row">
+      <div className="row" >
         <div className="col-md-6  ourLandinAnimate2">
           <div className="contact-briefing">
             <h1>Let's Talk</h1>
@@ -60,7 +65,11 @@ const Contact = () => {
           </div>
         </div>
         <div className="col-md-6 scaleAnimeContactForm ">
-          <form className="d-flex flex-column align-items-start gap-2 formContent" ref={formRef} onSubmit={sendEmailFuction}>
+          <form
+            className="d-flex flex-column align-items-start gap-2 formContent"
+            ref={formRef}
+            onSubmit={sendEmailFuction}
+          >
             <label htmlFor="yourName">Your Name</label>
             <input
               type="text"
@@ -84,7 +93,7 @@ const Contact = () => {
             />
             <label htmlFor="yourmessage">Write your message here</label>
             <textarea
-            id="yourmessage"
+              id="yourmessage"
               name="message"
               placeholder="Enter your Message "
               rows="3"

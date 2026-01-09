@@ -1,8 +1,8 @@
 import React from "react";
 import "./MyWork.css";
-import "../index.css";
+// import "../index.css";
 
-import mywork_data from "../components/mywork_data";
+import mywork_data from "../mywork_data";
 
 const MyWork = () => {
 
