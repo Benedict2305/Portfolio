@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./NavBar.css";
-import cv from '../images/BENEDICT_CV_MAIN .pdf'
+import cv from '../images/BENEDICT_CV_MAIN.pdf'
 import resume from '../images/BENEDICT_résumé .pdf'
 import logoImage from '../images/orange-logo.jpg'
 
@@ -20,7 +20,7 @@ const NavBar = () => {
                 
               }}
             >
-            <img src={logoImage} alt="this is a brand logo of benedict odijel" width={65} className="rounded-circle" />
+            <img src={logoImage} alt="this is a brand logo of benedict odijel" width={50} className="rounded-circle" />
             </NavLink>
           </div>
 

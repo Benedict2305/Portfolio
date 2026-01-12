@@ -6,7 +6,7 @@ import "../General_style.css";
 import splined from "../images/scene-clean.splinecode";
 
 
-import cv from '../images/BENEDICT_CV_MAIN .pdf'
+import cv from '../images/BENEDICT_CV_MAIN.pdf'
 import resume from '../images/BENEDICT_résumé .pdf'
 
 const Hero = () => {
