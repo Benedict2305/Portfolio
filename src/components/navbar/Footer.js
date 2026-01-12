@@ -3,7 +3,7 @@ import "./Footer.css";
 import { NavLink } from "react-bootstrap";
 import { useState, useEffect } from "react";
 import '../General_style.css'
-import benedictLogo from "../images/benedictLogo.png";
+import logoImage from '../images/orange-logo.jpg'
 const Footer = () => {
   const [copyRightDate, setCopyRightDate] = useState("");
   useEffect(() => {
@@ -21,7 +21,7 @@ const Footer = () => {
         <div className="col-12">
           <div className="row align-items-center justify-content-center">
             <div className="col-md-6 footerBrand">
-              <h1>Benedict</h1>
+              <img src={logoImage} alt="this is a brand logo of benedict odijel" width={100} className="rounded" />
               <p className="fs-5 scaleAnime">
                 I am an experienced Frontend Developer with lots of professional
                 expertise in the field.
@@ -29,18 +29,18 @@ const Footer = () => {
             </div>
             <article className="col-md-6 d-flex column-gap-4 align-items-center justify-content-center">
               <NavLink className="footer_icon">
-                <i class="bi bi-facebook fs-3 rounded-pill" onClick={() => window.open("https://www.facebook.com/ben.vic.7", "_blank")}></i>
+                <i class="bi bi-facebook fs-3 rounded-pill" onClick={() => window.open("https://www.facebook.com/ben.vic.7", "_blank",)}></i>
               </NavLink>
               <NavLink className="footer_icon">
-                <i class="bi bi-whatsapp fs-3" onClick={() => window.open('https://wa.me/+2347067979657', '_blank')}></i>
+                <i class="bi bi-whatsapp fs-3" onClick={() => window.open('https://wa.me/+2347067979657', '_blank',)}></i>
               </NavLink>
               <NavLink className="footer_icon">
-                <i class="bi bi-github fs-3" onClick={() => window.open("https://github.com/Benedict2305", "_blank")}></i>
+                <i class="bi bi-github fs-3" onClick={() => window.open("https://github.com/Benedict2305", "_blank",)}></i>
               </NavLink>
               <NavLink className="footer_icon">
                 <i
-                  class="bi bi-linkedin fs-3"
-                  onClick={() => window.open("https://www.linkedin.com/in/benedict-idio-b2650b398", "_blank")}
+                  class="bi bi-linkedin fs-3" 
+                  onClick={() => window.open("https://www.linkedin.com/in/benedict-idio", "_blank",)}
                 ></i>
               </NavLink>
             </article>
@@ -61,7 +61,7 @@ const Footer = () => {
               <NavLink className="footerTerms text-nowrap">
                 Privacy Policy{" "}
               </NavLink>
-              <NavLink className="footerTerms text-nowrap">
+              <NavLink to="/contact" className="footerTerms text-nowrap">
                 Connect with me
               </NavLink>
             </div>

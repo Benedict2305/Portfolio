@@ -1,11 +1,18 @@
 import React from "react";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
-
+import Swal from "sweetalert2";
 import "./Contact.css";
 import '../General_style.css'
 const Contact = () => {
   const formRef = useRef();
+
+  const showLertSuccess = () =>{
+    Swal.fire('Hello!', 'This message has been sent', 'info')
+  }
+  const showLertFailure = () =>{
+    Swal.fire('Hello!', 'This message was not sent', 'info')
+  }
 
   const sendEmailFuction = (e) => {
     e.preventDefault();
@@ -19,11 +26,14 @@ const Contact = () => {
       )
       .then(
         () => {
-          alert("Message sent successfully");
+          // alert("Message sent successfully");
+          showLertSuccess()
           formRef.current.reset();
         },
         (error) => {
-          alert("Failed to send message, please try again", error.text);
+          // alert("Failed to send message, please try again", error.text);
+          showLertFailure()
+          // Swal.fire('Hello!', 'This message was not sent', 'info')
         }
       );
   };

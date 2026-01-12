@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import "./NavBar.css";
 import cv from '../images/BENEDICT_CV_MAIN .pdf'
 import resume from '../images/BENEDICT_résumé .pdf'
+import logoImage from '../images/orange-logo.jpg'
 
 const NavBar = () => {
   return (
@@ -16,12 +17,10 @@ const NavBar = () => {
             <NavLink
               className="navbar-brand d-flex align-items-center justify-content-center text-white"
               style={{
-                fontFamily: "Hanalei",
-                fontSize: 30 + "px",
-                letterSpacing: 3,
+                
               }}
             >
-              Benedict
+            <img src={logoImage} alt="this is a brand logo of benedict odijel" width={65} className="rounded-circle" />
             </NavLink>
           </div>
 

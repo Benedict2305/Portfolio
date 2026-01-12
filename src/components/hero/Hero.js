@@ -69,7 +69,7 @@ const Hero = () => {
                   >
                     CV / Resumé
                   </button>
-                  <ul class="dropdown-menu ">
+                  <ul class="dropdown-menu bg-transparent">
                     <li className="">
                       <a
                         role="button"
