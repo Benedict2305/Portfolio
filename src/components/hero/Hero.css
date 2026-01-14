@@ -27,7 +27,8 @@ background-clip: text;
 .hero-action{
     gap: 25px;
     font-size: 1.5rem;
-     
+     display: flex;
+     align-items: center;
 }
 
 .hero-action .hero-connect{
@@ -95,7 +96,16 @@ background-clip: text;
     .hero-action .hero-resume, .hero-action .hero-connect{
         text-align: center;
         font-weight: 600;
-    } 
+    }
+    
+    .hero-action{
+        flex-direction: column;
+    }
+}
+@media (max-width:220px) {
+    .heroContent{
+        margin-top: 3rem;
+    }
 }
 
 @media (min-width:768px) and (max-width:1199px) {

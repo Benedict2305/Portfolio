@@ -55,7 +55,7 @@ const Hero = () => {
                 Frontend Developer with hands-on experience building responsive, user-focused web applications using HTML, CSS, JavaScript, and React. Comfortable translating designs into clean, functional interfaces and collaborating with cross-functional teams.
               </p>
 
-              <div className="hero-action d-flex align-items-center mb-3  justify-content-cente ">
+              <div className="hero-action mb-3  ">
                 <NavLink to='/contact' className="hero-connect px-2 px-md-3 py-2 text-decoration-none ">
                   Connect with me
                 </NavLink>
