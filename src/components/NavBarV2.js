@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import './NavBarV2.css';
 
+const navLinks = [
+    { id: 'home', label: 'Home' },
+    { id: 'about', label: 'About' },
+    { id: 'projects', label: 'Projects' },
+    { id: 'skills', label: 'Skills' },
+    { id: 'contact', label: 'Contact' },
+];
+
 const NavBarV2 = () => {
     const [scrolled, setScrolled] = useState(false);
     const [activeSection, setActiveSection] = useState('home');
-
-    const navLinks = [
-        { id: 'home', label: 'Home' },
-        { id: 'about', label: 'About' },
-        { id: 'projects', label: 'Projects' },
-        { id: 'skills', label: 'Skills' },
-        { id: 'contact', label: 'Contact' },
-    ];
 
     useEffect(() => {
         const handleScroll = () => {
@@ -76,9 +76,9 @@ const NavBarV2 = () => {
 
                     {/* Nav Links */}
                     <div className="collapse navbar-collapse" id="navMenu">
-                        <ul className="navbar-nav ms-auto gap-lg-1 align-items-lg-center" role="list">
+                        <ul className="navbar-nav ms-auto gap-lg-1 align-items-lg-center">
                             {navLinks.map(link => (
-                                <li className="nav-item" key={link.id} role="listitem">
+                                <li className="nav-item" key={link.id}>
                                     <a
                                         className={`nav-link ocean-link${activeSection === link.id ? ' active' : ''}`}
                                         href={`#${link.id}`}
@@ -89,7 +89,7 @@ const NavBarV2 = () => {
                                     </a>
                                 </li>
                             ))}
-                            <li className="nav-item ms-lg-3" role="listitem">
+                            <li className="nav-item ms-lg-3">
                                 <a
                                     className="btn-primary-ocean btn-sm-nav"
                                     href="#contact"

@@ -1,10 +1,10 @@
 import React, { useEffect, useRef } from 'react';
 import './HeroV2.css';
 
+const roles = ['Frontend Developer', 'Web Developer', 'Code Instructor'];
+
 const HeroV2 = () => {
     const typedRef = useRef(null);
-
-    const roles = ['Frontend Developer', 'Web Developer', 'Code Instructor'];
 
     useEffect(() => {
         let roleIndex = 0;
