@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import './AboutV2.css';
 
 const AboutV2 = () => {
