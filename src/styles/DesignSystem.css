@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+/* ============================================
+   DEEP OCEAN DESIGN SYSTEM — Benedict Idio
+   ============================================ */
+
+:root {
+    /* Color Palette */
+    --ocean-black: #050c18;
+    --ocean-deep: #0a1628;
+    --ocean-surface: #0f1f3d;
+    --ocean-mid: #162038;
+    --ocean-card: #111b35;
+
+    /* Accent Colors */
+    --teal: #14f1d9;
+    --teal-dim: #0dd4c0;
+    --cyan: #38bdf8;
+    --violet: #8b5cf6;
+    --violet-dim: #7c3aed;
+    --pink-accent: #f472b6;
+
+    /* Text */
+    --text-primary: #f0f9ff;
+    --text-secondary: #94a3b8;
+    --text-muted: #64748b;
+
+    /* Glass */
+    --glass-bg: rgba(15, 31, 61, 0.6);
+    --glass-border: rgba(20, 241, 217, 0.12);
+    --glass-hover: rgba(20, 241, 217, 0.06);
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, #14f1d9 0%, #8b5cf6 100%);
+    --gradient-hero: linear-gradient(135deg, #0a1628 0%, #162038 100%);
+    --gradient-card: linear-gradient(145deg, rgba(20, 241, 217, 0.05) 0%, rgba(139, 92, 246, 0.05) 100%);
+
+    /* Typography */
+    --font-heading: 'Plus Jakarta Sans', sans-serif;
+    --font-body: 'Space Grotesk', sans-serif;
+
+    /* Spacing */
+    --section-pad: 120px 0;
+    --section-pad-sm: 70px 0;
+
+    /* Transitions */
+    --ease-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --ease-spring: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+    /* Shadows */
+    --shadow-teal: 0 0 30px rgba(20, 241, 217, 0.15);
+    --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.4);
+    --shadow-glow: 0 0 60px rgba(20, 241, 217, 0.08);
+}
+
+/* ============================================
+   RESET & BASE
+   ============================================ */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--ocean-black);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--ease-smooth);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* ============================================
+   SCROLLBAR
+   ============================================ */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--ocean-black);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(var(--teal), var(--violet));
+    border-radius: 10px;
+}
+
+/* ============================================
+   SELECTION
+   ============================================ */
+::selection {
+    background: rgba(20, 241, 217, 0.25);
+    color: var(--teal);
+}
+
+/* ============================================
+   SECTION PADDING
+   ============================================ */
+.section-pad {
+    padding: var(--section-pad);
+}
+
+@media (max-width: 768px) {
+    .section-pad {
+        padding: var(--section-pad-sm);
+    }
+}
+
+/* ============================================
+   TYPOGRAPHY UTILITIES
+   ============================================ */
+.gradient-text {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-teal {
+    color: var(--teal) !important;
+}
+
+.text-ocean {
+    color: var(--text-secondary) !important;
+}
+
+.section-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--teal);
+    margin-bottom: 1rem;
+}
+
+.section-label::before {
+    content: '';
+    width: 24px;
+    height: 2px;
+    background: var(--teal);
+    border-radius: 2px;
+}
+
+/* ============================================
+   GLASS CARD
+   ============================================ */
+.glass-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    transition: var(--ease-smooth);
+}
+
+.glass-card:hover {
+    border-color: rgba(20, 241, 217, 0.25);
+    background: rgba(15, 31, 61, 0.75);
+    box-shadow: var(--shadow-teal);
+}
+
+/* ============================================
+   BUTTONS
+   ============================================ */
+.btn-primary-ocean {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 32px;
+    background: var(--gradient-primary);
+    color: #050c18;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 0.95rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: var(--ease-smooth);
+    position: relative;
+    overflow: hidden;
+    letter-spacing: 0.01em;
+}
+
+.btn-primary-ocean::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.15);
+    opacity: 0;
+    transition: var(--ease-smooth);
+}
+
+.btn-primary-ocean:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 40px rgba(20, 241, 217, 0.35);
+    color: #050c18;
+}
+
+.btn-primary-ocean:hover::before {
+    opacity: 1;
+}
+
+.btn-secondary-ocean {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 32px;
+    background: transparent;
+    color: var(--teal);
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 0.95rem;
+    border: 1.5px solid var(--glass-border);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: var(--ease-smooth);
+    letter-spacing: 0.01em;
+}
+
+.btn-secondary-ocean:hover {
+    border-color: var(--teal);
+    background: rgba(20, 241, 217, 0.08);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(20, 241, 217, 0.15);
+    color: var(--teal);
+}
+
+/* ============================================
+   ANIMATED MESH BACKGROUND
+   ============================================ */
+.mesh-bg {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.mesh-bg::before {
+    content: '';
+    position: absolute;
+    top: -30%;
+    right: -20%;
+    width: 60vw;
+    height: 60vw;
+    background: radial-gradient(circle, rgba(20, 241, 217, 0.04) 0%, transparent 70%);
+    border-radius: 50%;
+    animation: meshPulse 8s ease-in-out infinite;
+}
+
+.mesh-bg::after {
+    content: '';
+    position: absolute;
+    bottom: -20%;
+    left: -15%;
+    width: 50vw;
+    height: 50vw;
+    background: radial-gradient(circle, rgba(139, 92, 246, 0.05) 0%, transparent 70%);
+    border-radius: 50%;
+    animation: meshPulse 10s ease-in-out infinite reverse;
+}
+
+@keyframes meshPulse {
+
+    0%,
+    100% {
+        transform: scale(1) rotate(0deg);
+    }
+
+    50% {
+        transform: scale(1.1) rotate(5deg);
+    }
+}
+
+/* ============================================
+   SCROLL REVEAL ANIMATIONS
+   ============================================ */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal-delay-1 {
+    transition-delay: 0.1s;
+}
+
+.reveal-delay-2 {
+    transition-delay: 0.2s;
+}
+
+.reveal-delay-3 {
+    transition-delay: 0.3s;
+}
+
+.reveal-delay-4 {
+    transition-delay: 0.4s;
+}
+
+.reveal-delay-5 {
+    transition-delay: 0.5s;
+}
+
+/* ============================================
+   CURSOR GLOW
+   ============================================ */
+.cursor-glow {
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(20, 241, 217, 0.06) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 0;
+    transform: translate(-50%, -50%);
+    transition: all 0.1s linear;
+}

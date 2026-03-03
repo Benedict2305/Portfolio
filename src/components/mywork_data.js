@@ -1,6 +1,7 @@
 import project1 from './images/senidea.png'
 import project2 from './images/amala-Ibadan.png'
 import project3 from './images/breakfast-place.png'
+import project4 from './images/techSpireWEb.png'
 
 const mywork_data = [
     {
@@ -20,6 +21,13 @@ const mywork_data = [
         w_img:project3,
          w_detail:"An unforgettable experience that highlighted our fusion of traditional and contemporary flavors.",
          w_buttonUrl: 'https://eatery-website.vercel.app/'
+         
+    },
+    {
+        w_name:"TechSpire",
+        w_img:project4,
+         w_detail:"Where ideas become the Future",
+         w_buttonUrl: 'https://tech-sphire.vercel.app/'
          
     }
     

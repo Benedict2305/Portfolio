@@ -1,0 +1,274 @@
+/* ============================================
+   SKILLS & EXPERIENCE SECTION
+   ============================================ */
+.skills-section {
+    position: relative;
+}
+
+.skills-heading {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 800;
+    color: #f0f9ff;
+    margin-bottom: 1rem;
+}
+
+.skills-subtext {
+    color: #94a3b8;
+    font-size: 1rem;
+    max-width: 440px;
+    margin: 0 auto;
+}
+
+/* ============================================
+   SKILLS CARD
+   ============================================ */
+.skills-card {
+    padding: 32px;
+}
+
+.skills-card-title,
+.exp-col-title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #f0f9ff;
+    margin-bottom: 28px;
+    display: flex;
+    align-items: center;
+}
+
+.skills-list {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+/* Skill Item */
+.skill-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.skill-name-wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.skill-icon {
+    font-size: 1rem;
+    color: #14f1d9;
+}
+
+.skill-name {
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: #f0f9ff;
+}
+
+.skill-category {
+    font-size: 0.68rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #64748b;
+    background: rgba(255, 255, 255, 0.04);
+    padding: 2px 8px;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.skill-pct {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #14f1d9;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Progress Bar */
+.skill-bar-track {
+    width: 100%;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.skill-bar-fill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #14f1d9, #8b5cf6);
+    border-radius: 10px;
+    transition: width 1.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 0 8px rgba(20, 241, 217, 0.4);
+}
+
+/* Animate bars when section is revealed */
+.revealed .skill-bar-fill {
+    width: var(--target-width);
+}
+
+/* Also trigger when parent is in viewport */
+.skills-card .skill-bar-fill {
+    width: var(--target-width);
+}
+
+/* ============================================
+   EXPERIENCE TIMELINE
+   ============================================ */
+.exp-col-title {
+    padding: 0;
+    background: none;
+    border: none;
+    margin-bottom: 0;
+}
+
+.experience-timeline {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    padding-left: 24px;
+}
+
+.experience-timeline::before {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 8px;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, #14f1d9, rgba(139, 92, 246, 0.2), transparent);
+}
+
+.timeline-item {
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -24px;
+    top: 20px;
+    width: 16px;
+    height: 16px;
+    background: linear-gradient(135deg, #14f1d9, #8b5cf6);
+    border-radius: 50%;
+    border: 3px solid #050c18;
+    box-shadow: 0 0 0 3px rgba(20, 241, 217, 0.2);
+    transition: box-shadow 0.3s;
+}
+
+.timeline-item:hover .timeline-dot {
+    box-shadow: 0 0 0 6px rgba(20, 241, 217, 0.1);
+}
+
+.timeline-card {
+    padding: 22px 24px;
+    transition: all 0.3s ease;
+}
+
+.timeline-card:hover {
+    transform: translateX(4px);
+}
+
+.timeline-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+}
+
+.timeline-role {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #f0f9ff;
+    margin-bottom: 4px;
+}
+
+.timeline-company {
+    font-size: 0.82rem;
+    color: #94a3b8;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.timeline-period {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #14f1d9;
+    white-space: nowrap;
+    background: rgba(20, 241, 217, 0.08);
+    padding: 4px 12px;
+    border-radius: 50px;
+    border: 1px solid rgba(20, 241, 217, 0.15);
+    display: flex;
+    align-items: center;
+    height: fit-content;
+}
+
+.timeline-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 14px 0;
+}
+
+.timeline-desc {
+    font-size: 0.875rem;
+    color: #94a3b8;
+    line-height: 1.7;
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 18px;
+}
+
+.timeline-desc::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #14f1d9;
+    font-weight: bold;
+}
+
+.timeline-desc:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+/* Reuse from design system / projects */
+.stack-badge {
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: #8b5cf6;
+    background: rgba(139, 92, 246, 0.08);
+    border: 1px solid rgba(139, 92, 246, 0.2);
+    padding: 3px 10px;
+    border-radius: 50px;
+}
+
+@media (max-width: 767px) {
+    .skills-card {
+        padding: 24px;
+    }
+
+    .timeline-header {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
