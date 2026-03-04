@@ -68,7 +68,7 @@ const ProjectsV2 = () => {
                             {/* Content */}
                             <div className="project-content">
                                 <div className="project-meta">
-                                    <span className="project-tag">Frontend Engineering</span>
+                                    <span className="project-tag">Frontend Development</span>
                                     <a
                                         href={project.w_buttonUrl}
                                         target="_blank"
