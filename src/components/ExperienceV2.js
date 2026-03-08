@@ -4,8 +4,9 @@ import './ExperienceV2.css';
 const ExperienceV2 = () => {
 
     const skills = [
-        { name: 'React.js', level: 60, icon: 'bi-filetype-jsx', category: 'Frontend' },
-        { name: 'JavaScript', level: 62, icon: 'bi-filetype-js', category: 'Frontend' },
+        { name: 'AI Certified', level: 87, icon: 'bi-patch-check', category: 'Certification' },
+        { name: 'React.js', level: 70, icon: 'bi-filetype-jsx', category: 'Frontend' },
+        { name: 'JavaScript', level: 72, icon: 'bi-filetype-js', category: 'Frontend' },
         { name: 'HTML5', level: 85, icon: 'bi-filetype-html', category: 'Frontend' },
         { name: 'CSS3', level: 77, icon: 'bi-filetype-css', category: 'Frontend' },
         { name: 'Tailwind', level: 78, icon: 'bi-filetype-css', category: 'Frontend' },
@@ -20,6 +21,7 @@ const ExperienceV2 = () => {
         { name: 'Collaboration,', level: 83, icon: 'bi-git', category: 'strength' },
         { name: 'Clear Communication', level: 85, icon: 'bi-git', category: 'strength' },
         { name: 'Data-Driven', level: 80, icon: 'bi-git', category: 'strength' },
+
 
     ];
 

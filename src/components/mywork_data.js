@@ -3,6 +3,7 @@ import project2 from './images/amala-Ibadan.png'
 import project3 from './images/breakfast-place.png'
 import project4 from './images/techSpireWEb.png'
 import project5 from './images/benPortfolio.png'
+import project6 from './images/chuckdashboard.png'
 
 const mywork_data = [
     {
@@ -36,6 +37,13 @@ const mywork_data = [
         w_img: project5,
         w_detail: "Turning ideas into exceptional web experiences — one line of code at a time.",
         w_buttonUrl: 'https://benedict-portfolio-murex.vercel.app/'
+
+    },
+    {
+        w_name: "chuck Norris Jokes",
+        w_img: project6,
+        w_detail: "A web application that displays random jokes about Chuck Norris. Using chuck norris api",
+        w_buttonUrl: 'https://chuck-norris-jokes-inky.vercel.app/'
 
     }
 

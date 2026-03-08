@@ -83,17 +83,17 @@ const HeroV2 = () => {
 
                             {/* Social Links */}
                             <div className="hero-socials reveal reveal-delay-5" aria-label="Social media links">
-                                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="hero-social-link" aria-label="GitHub Profile">
+                                <a href="https://github.com/benedict2305" target="_blank" rel="noopener noreferrer" className="hero-social-link" aria-label="GitHub Profile">
                                     <i className="bi bi-github" aria-hidden="true"></i>
                                 </a>
-                                <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" className="hero-social-link" aria-label="LinkedIn Profile">
+                                <a href="https://linkedin.com/in/benedict-idio" target="_blank" rel="noopener noreferrer" className="hero-social-link" aria-label="LinkedIn Profile">
                                     <i className="bi bi-linkedin" aria-hidden="true"></i>
                                 </a>
                                 <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" className="hero-social-link" aria-label="Twitter Profile">
                                     <i className="bi bi-twitter-x" aria-hidden="true"></i>
                                 </a>
                                 <span className="social-divider" aria-hidden="true"></span>
-                                <a href="mailto:benedict@example.com" className="hero-social-link" aria-label="Send Email">
+                                <a href="mailto:benidzy.bi@gmail.com" className="hero-social-link" aria-label="Send Email">
                                     <i className="bi bi-envelope" aria-hidden="true"></i>
                                 </a>
                             </div>
