@@ -87,7 +87,7 @@ const ExperienceV2 = () => {
                 'Reinforced best practices in clean code, responsiveness, and problem-solving.',
                 'Maintained a 95% satisfaction rate in student feedback.'
             ],
-            tags: ['React', 'Redux', 'APIs', 'JavaScript', 'CSS3', 'HTML', 'Bootstrap', 'Tailwind'],
+            tags: ['React', 'APIs', 'JavaScript', 'CSS3', 'HTML', 'Bootstrap', 'Tailwind'],
         },
     ];
 
