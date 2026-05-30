@@ -59,8 +59,7 @@ const AboutV2 = () => {
                             </div>
 
                             <p className="about-bio-text">
-                                I'm a passionate <strong>Frontend Developer</strong> from Nigeria, with 5+ years
-                                crafting premium web experiences. I specialize in <strong>React</strong>,
+                                I'm a passionate <strong>Frontend Developer</strong> from Nigeria, with 3+ years crafting premium web experiences. I specialize in <strong>React</strong>,
                                 <strong> modern JavaScript</strong>, and responsive design —
                                 delivering products that are both visually stunning and technically robust.
                             </p>
