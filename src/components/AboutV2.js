@@ -5,7 +5,7 @@ import './AboutV2.css';
 const AboutV2 = () => {
 
     const stats = [
-        { number: '1-2', label: 'Years Experience' },
+        { number: '2', label: 'Years Experience' },
         { number: '7', label: 'Projects Delivered' },
         { number: '300+', label: 'Students Taught' },
     ];
