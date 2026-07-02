@@ -7,7 +7,7 @@ const AboutV2 = () => {
     const stats = [
         { number: '2', label: 'Years Experience' },
         { number: '7', label: 'Projects Delivered' },
-        { number: '300+', label: 'Students Taught' },
+        { number: '20+', label: 'Students Taught' },
     ];
 
     const values = [

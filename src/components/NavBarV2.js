@@ -32,7 +32,12 @@ const NavBarV2 = () => {
 
     const scrollTo = (id) => {
         const el = document.getElementById(id);
-        if (el) el.scrollIntoView({ behavior: 'smooth' });
+        if (el) {
+            const offset = 90;
+            const top = el.getBoundingClientRect().top + window.pageYOffset - offset;
+            window.scrollTo({ top, behavior: 'smooth' });
+        }
+
         // close mobile menu
         const menu = document.getElementById('navMenu');
         if (menu && menu.classList.contains('show')) {
