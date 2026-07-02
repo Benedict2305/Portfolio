@@ -102,7 +102,7 @@ const FooterV2 = () => {
                         &copy; {currentYear} <span className="gradient-text">Benedict Idio</span>. All rights reserved.
                     </p>
                     <p className="footer-craft">
-                        Crafted with <span className="footer-heart" aria-label="love">❤️</span> &amp; React JS
+                        Crafted with <span className="footer-heart" aria-label="love">React JS</span> &amp; Tailwind CSS
                     </p>
                     <button
                         className="back-to-top"

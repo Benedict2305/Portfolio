@@ -57,19 +57,15 @@ const HeroV2 = () => {
                             </div>
 
                             <h1 className="hero-title reveal reveal-delay-1">
-                                Hi, I'm <span className="gradient-text">Benedict Idio</span>
+                                Hi, I'm <span className="gradient-text">Idio Benedict</span>
                             </h1>
 
-                            <div className="hero-typed-wrapper reveal reveal-delay-2">
-                                <span className="typed-static">I'm a </span>
-                                <span className="typed-text" ref={typedRef}></span>
-                                <span className="typed-cursor" aria-hidden="true">|</span>
-                            </div>
+                            <h2 className="hero-headline reveal reveal-delay-2">
+                                Junior Frontend Developer | Crafting User-Centric Interfaces with React | Eager to Solve Real-World Problems.
+                            </h2>
 
                             <p className="hero-description reveal reveal-delay-3">
-                                I build <strong>beautiful, fast, and accessible</strong> web experiences.
-                                Specializing in React and modern JavaScript — turning ideas into
-                                products that users love.
+                                Turning innovative designs into high-performance, user-friendly web applications
                             </p>
 
                             <div className="hero-cta reveal reveal-delay-4">
@@ -112,12 +108,12 @@ const HeroV2 = () => {
 
                             {/* Floating stat cards */}
                             <article className="hero-float-card card-top-left">
-                                <span className="float-card-num gradient-text">3+</span>
+                                <span className="float-card-num gradient-text">2</span>
                                 <span className="float-card-label">Years Experience</span>
                             </article>
 
                             <article className="hero-float-card card-bottom-right">
-                                <span className="float-card-num gradient-text">8+</span>
+                                <span className="float-card-num gradient-text">7+</span>
                                 <span className="float-card-label">Projects Shipped</span>
                             </article>
 

@@ -80,11 +80,48 @@ const ProjectsV2 = () => {
                                     </a>
                                 </div>
                                 <h3 className="project-name">{project.w_name}</h3>
-                                <p className="project-detail">{project.w_detail}</p>
-                                <div className="project-stack">
-                                    <span className="stack-badge">React</span>
-                                    <span className="stack-badge">Bootstrap</span>
-                                    <span className="stack-badge">JavaScript</span>
+
+                                <div className="project-detail-block">
+                                    <h4 className="project-detail-title">What it is</h4>
+                                    <p className="project-detail">{project.whatItIs || project.w_detail}</p>
+                                </div>
+
+                                <div className="project-detail-block">
+                                    <h4 className="project-detail-title">Challenge</h4>
+                                    <p className="project-detail">{project.challenge}</p>
+                                </div>
+
+                                <div className="project-detail-block">
+                                    <h4 className="project-detail-title">Solution</h4>
+                                    <p className="project-detail">{project.solution}</p>
+                                </div>
+
+                                <div className="project-detail-block">
+                                    <h4 className="project-detail-title">Tech Stack</h4>
+                                    <div className="project-stack">
+                                        {project.techStack?.map((tech, techIndex) => (
+                                            <span className="stack-badge" key={techIndex}>{tech}</span>
+                                        ))}
+                                    </div>
+                                </div>
+
+                                <div className="project-actions">
+                                    <a
+                                        href={project.w_buttonUrl}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="project-action-btn project-action-btn-primary"
+                                    >
+                                        Live Demo
+                                    </a>
+                                    <a
+                                        href={project.repoUrl || 'https://github.com/benedict2305'}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="project-action-btn project-action-btn-secondary"
+                                    >
+                                        View Code
+                                    </a>
                                 </div>
                             </div>
                         </article>

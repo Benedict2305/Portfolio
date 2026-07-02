@@ -3,76 +3,70 @@ import './ExperienceV2.css';
 
 const ExperienceV2 = () => {
 
-    const skills = [
-        { name: 'AI Certified', level: 87, icon: 'bi-patch-check', category: 'Certification' },
-        { name: 'React.js', level: 70, icon: 'bi-filetype-jsx', category: 'Frontend' },
-        { name: 'JavaScript', level: 72, icon: 'bi-filetype-js', category: 'Frontend' },
-        { name: 'HTML5', level: 85, icon: 'bi-filetype-html', category: 'Frontend' },
-        { name: 'CSS3', level: 77, icon: 'bi-filetype-css', category: 'Frontend' },
-        { name: 'Tailwind', level: 78, icon: 'bi-filetype-css', category: 'Frontend' },
-        { name: 'Bootstrap 5', level: 78, icon: 'bi-bootstrap', category: 'Frontend' },
-        { name: 'Scratch', level: 70, icon: 'bi-git', category: 'Game and Animation' },
-        { name: 'PictoBlox', level: 70, icon: 'bi-git', category: 'Game and Animation' },
-        { name: 'Bittle Block', level: 70, icon: 'bi-git', category: 'Game and Animation' },
-        { name: 'Construct 3', level: 70, icon: 'bi-git', category: 'Game' },
-        { name: 'Ardruino IDE', level: 70, icon: 'bi-git', category: 'embedded systems' },
-        { name: 'Microsoft word', level: 80, icon: 'bi-git', category: 'Document' },
-        { name: 'Problem Solving', level: 78, icon: 'bi-git', category: 'strength' },
-        { name: 'Collaboration,', level: 83, icon: 'bi-git', category: 'strength' },
-        { name: 'Clear Communication', level: 85, icon: 'bi-git', category: 'strength' },
-        { name: 'Data-Driven', level: 80, icon: 'bi-git', category: 'strength' },
-
-
+    const skillGroups = [
+        {
+            title: 'Proficient',
+            items: ['React', 'JavaScript (ES6+)', 'HTML5', 'CSS3', 'Bootstrap', 'TailwindCSS', 'Git & GitHub', 'Restful APIs']
+        },
+        {
+            title: 'Familiar With',
+            items: ['Figma (for UI/UX)']
+        },
+        {
+            title: 'Currently Learning',
+            items: ['NodeJS', 'MongoDB', 'TypeScript', 'Testing (Jest/React Testing Library)', 'PostgreSQL', 'MySQL']
+        }
     ];
 
     const experiences = [
         {
-            role: 'Coding Program Lead',
+            role: 'Coding Program Instructor',
             company: 'ST.Francis college',
             period: '2025 — Present',
             desc: [
-                'Lead the design and delivery of a structured coding program serving 300+ students across primary and secondary levels.',
-                'Developed and implemented a scalable, project-based curriculum covering Scratch, Beetle block, construct 3, HTML, CSS, JavaScript, and introductory web development.'
+                'Teach and mentor 300+ students across primary and secondary levels in structured coding programs.',
+                'Developed a project-based curriculum covering Scratch, Beetle Block, Construct 3, HTML, CSS, JavaScript, and introductory web development.'
             ],
-            tags: ['scratch', 'Construct 3', 'Beetle Block', 'Pictoblox', 'HTML', 'CSS3', 'javaScript', "python", 'Ardruino'],
+            tags: ['scratch', 'Construct 3', 'Beetle Block', 'Pictoblox', 'HTML', 'CSS3', 'JavaScript', "python", 'Arduino'],
         },
         {
-            role: 'Coding Program Lead',
-            company: 'Sandville group of school',
+            role: 'Coding Program Instructor',
+            company: 'Sandville Group of Schools',
             period: '2024 — Present',
             desc: [
-                'Lead the design and delivery of a structured coding program serving 300+ students across primary and secondary levels.',
-                'Developed and implemented a scalable, project-based curriculum covering Scratch, Beetle block, construct 3, HTML, CSS, JavaScript, and introductory web development.'
+                'Teach and mentor 300+ students across primary and secondary levels in structured coding programs.',
+                'Developed a project-based curriculum covering Scratch, Beetle Block, Construct 3, HTML, CSS, JavaScript, and introductory web development.'
             ],
-            tags: ['scratch', 'Construct 3', 'Beetle Block', 'Pictoblox', 'HTML', 'CSS3', 'Ardruino', 'javaScript', "python"],
+            tags: ['scratch', 'Construct 3', 'Beetle Block', 'Pictoblox', 'HTML', 'CSS3', 'Arduino', 'JavaScript', "python"]
         },
         {
             role: 'Junior Frontend Developer',
             company: 'Ziffcode Technologies Limited',
+            
             period: '2025',
             desc: [
-                'Developed and maintained an eatery websites (Breakfast place).',
-                'Gained foundational expertise in responsive design and cross-browser compatibility.'
+                'Developed and maintained eatery websites using responsive design principles.',
+                'Built cross-browser compatible interfaces with React and Bootstrap for client delivery.'
             ],
-            tags: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'React Js'],
+            tags: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'React'],
         },
         {
             role: 'Junior Frontend Developer',
-            company: 'Freelancer/self employed',
+            company: 'Freelancer/Self-Employed',
             period: '2025',
             desc: [
-                'Developed and an NGO websites (Senidea).',
-                'Gained foundational expertise in responsive design and cross-browser compatibility.'
+                'Built NGO website (Senidea) focused on accessibility and clear messaging.',
+                'Implemented responsive layouts and accessibility features for mission-driven organizations.'
             ],
             tags: ['HTML', 'CSS', 'Bootstrap', 'JavaScript', 'React'],
         },
         {
             role: 'Junior Frontend Developer',
-            company: 'Freelancer/Self employed',
+            company: 'Freelancer/Self-Employed',
             period: '2024',
             desc: [
-                'Developed an eatery website (Amala Ibadan).',
-                'Gained foundational expertise in responsive design and cross-browser compatibility.'
+                'Built restaurant website (Amala Ibadan) showcasing brand identity and menu offerings.',
+                'Developed responsive, visually rich interfaces with clean navigation and user engagement focus.'
             ],
             tags: ['HTML', 'CSS', 'Bootstrap', 'JavaScript', 'React'],
         },
@@ -87,7 +81,7 @@ const ExperienceV2 = () => {
                 'Reinforced best practices in clean code, responsiveness, and problem-solving.',
                 'Maintained a 95% satisfaction rate in student feedback.'
             ],
-            tags: ['React', 'APIs', 'JavaScript', 'CSS3', 'HTML', 'Bootstrap', 'Tailwind'],
+            tags: ['React', 'REST APIs', 'JavaScript', 'CSS3', 'HTML5', 'Bootstrap', 'TailwindCSS'],
         },
     ];
 
@@ -108,32 +102,27 @@ const ExperienceV2 = () => {
                     </div>
                 </div>
 
+                        
+
+                        
                 <div className="row g-5">
 
                     {/* Skills Column */}
                     <div className="col-lg-6 reveal">
                         <div className="glass-card skills-card">
-                            <h3 className="skills-card-title">
+                            <h2 className="skills-card-title">
                                 <i className="bi bi-cpu text-teal me-2" aria-hidden="true"></i>
                                 Technical Skills
-                            </h3>
+                            </h2>
                             <div className="skills-list">
-                                {skills.map((skill, i) => (
-                                    <div className="skill-item" key={i}>
-                                        <div className="skill-info">
-                                            <div className="skill-name-wrap">
-                                                <i className={`bi ${skill.icon} skill-icon`} aria-hidden="true"></i>
-                                                <span className="skill-name">{skill.name}</span>
-                                                <span className="skill-category">{skill.category}</span>
-                                            </div>
-                                            <span className="skill-pct">{skill.level}%</span>
-                                        </div>
-                                        <div className="skill-bar-track" role="progressbar" aria-valuenow={skill.level} aria-valuemin="0" aria-valuemax="100" aria-label={`${skill.name} proficiency`}>
-                                            <div
-                                                className="skill-bar-fill"
-                                                style={{ '--target-width': `${skill.level}%` }}
-                                            ></div>
-                                        </div>
+                                {skillGroups.map((group, i) => (
+                                    <div className="skill-group" key={i}>
+                                        <h3 className="skill-group-title">{group.title}</h3>
+                                        <ul className="skill-group-list">
+                                            {group.items.map((item, index) => (
+                                                <li className="skill-group-item" key={index}>{item}</li>
+                                            ))}
+                                        </ul>
                                     </div>
                                 ))}
                             </div>

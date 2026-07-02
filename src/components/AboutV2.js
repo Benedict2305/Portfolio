@@ -1,13 +1,13 @@
 import React from 'react';
 import './AboutV2.css';
+// import BenCV from '../assets/Benedict_Idio_CV.pdf';
 
 const AboutV2 = () => {
 
     const stats = [
-        { number: '3+', label: 'Years Experience' },
-        { number: '8+', label: 'Projects Delivered' },
-        { number: '6+', label: 'Happy Clients' },
-        { number: '100%', label: 'Dedication' },
+        { number: '1-2', label: 'Years Experience' },
+        { number: '7', label: 'Projects Delivered' },
+        { number: '300+', label: 'Students Taught' },
     ];
 
     const values = [
@@ -59,15 +59,17 @@ const AboutV2 = () => {
                             </div>
 
                             <p className="about-bio-text">
-                                I'm a passionate <strong>Frontend Developer</strong> from Nigeria, with 3+ years crafting premium web experiences. I specialize in <strong>React</strong>,
-                                <strong> modern JavaScript</strong>, and responsive design —
-                                delivering products that are both visually stunning and technically robust.
+                                Hello! I'm Benedict Idio, a passionate Junior Frontend Developer specializing in building dynamic and accessible web applications with React. My journey into web development began when I realized the power of code to solve everyday problems.
                             </p>
                             <p className="about-bio-text">
-                                My goal is simple: to write code that <strong>solves real problems</strong> and
-                                creates genuine value. When I'm not coding, I'm exploring design trends,
-                                contributing to open source, or mentoring upcoming developers.
+                                As a technical instructor, I've taught 300+ students and led code reviews—experience that shaped how I build user-friendly, accessible applications. I channel these teaching insights into crafting robust frontend solutions and mentoring others. I'm eager to join a dynamic team where I can contribute and grow my expertise in modern web technologies.
                             </p>
+                            <p className="about-bio-text">When I'm not coding, you find me:</p>
+                            <ul className="about-bio-list">
+                                <li>Exploring new web design trends</li>
+                                <li>Reading tech blogs</li>
+                                <li>Watching football</li>
+                            </ul>
 
                             <a
                                 href="/Benedict_Idio_CV.pdf"
